@@ -7,6 +7,8 @@
 //
 
 #import "AKLabelDriver.h"
+#import "AKViewLocator.h"
+
 
 @implementation AKLabelDriver {
   UILabel *_label;
@@ -22,20 +24,7 @@
 
 + (id)inWindow:(UIWindow *)window withTag:(NSInteger)tag
 {
-  UIView *view = [window viewWithTag:tag];
-  
-  if (view == nil) {
-    @throw [NSException exceptionWithName:NSInvalidArgumentException 
-                                   reason:[NSString stringWithFormat:@"Could not locate subview in window with tag %d", tag] 
-                                 userInfo:nil];
-  }
-  
-  if (![view isKindOfClass:[UILabel class]]) {
-    @throw [NSException exceptionWithName:NSInvalidArgumentException 
-                                   reason:[NSString stringWithFormat:@"Expected subview of type UILabel, was %@", view] 
-                                 userInfo:nil];
-  }
-  
+  UIView *view = [[AKViewLocator locatorWithRootView:window] locateSubviewWithTag:tag ofType:[UILabel class]];
   return [[self alloc] initWithLabel:(UILabel *)view];
 }
 

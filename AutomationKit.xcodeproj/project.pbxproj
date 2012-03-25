@@ -21,6 +21,8 @@
 		A30574CE151FE15F00DA19BD /* AKAutomaton.h in Headers */ = {isa = PBXBuildFile; fileRef = A30574CD151FE15F00DA19BD /* AKAutomaton.h */; };
 		A30574D1151FE1E200DA19BD /* AKNativeAutomaton.h in Headers */ = {isa = PBXBuildFile; fileRef = A30574CF151FE1E200DA19BD /* AKNativeAutomaton.h */; };
 		A30574D2151FE1E200DA19BD /* AKNativeAutomaton.m in Sources */ = {isa = PBXBuildFile; fileRef = A30574D0151FE1E200DA19BD /* AKNativeAutomaton.m */; };
+		A30574D5151FE54900DA19BD /* AKViewLocator.h in Headers */ = {isa = PBXBuildFile; fileRef = A30574D3151FE54900DA19BD /* AKViewLocator.h */; };
+		A30574D6151FE54900DA19BD /* AKViewLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = A30574D4151FE54900DA19BD /* AKViewLocator.m */; };
 		A3849DF2151FCBA0009289A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
 		A3849DF4151FCBA0009289A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF3151FCBA0009289A5 /* Foundation.framework */; };
 		A3849DF6151FCBA0009289A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */; };
@@ -59,8 +61,10 @@
 		A30574C9151FD7A600DA19BD /* UIEvent+Synthesis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIEvent+Synthesis.h"; sourceTree = "<group>"; };
 		A30574CA151FD7A600DA19BD /* UIEvent+Synthesis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIEvent+Synthesis.m"; sourceTree = "<group>"; };
 		A30574CD151FE15F00DA19BD /* AKAutomaton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAutomaton.h; sourceTree = "<group>"; };
-		A30574CF151FE1E200DA19BD /* AKNativeAutomaton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNativeAutomaton.h; sourceTree = "<group>"; };
-		A30574D0151FE1E200DA19BD /* AKNativeAutomaton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNativeAutomaton.m; sourceTree = "<group>"; };
+		A30574CF151FE1E200DA19BD /* AKNativeAutomaton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKNativeAutomaton.h; path = ../UIKit/AKNativeAutomaton.h; sourceTree = "<group>"; };
+		A30574D0151FE1E200DA19BD /* AKNativeAutomaton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKNativeAutomaton.m; path = ../UIKit/AKNativeAutomaton.m; sourceTree = "<group>"; };
+		A30574D3151FE54900DA19BD /* AKViewLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKViewLocator.h; sourceTree = "<group>"; };
+		A30574D4151FE54900DA19BD /* AKViewLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKViewLocator.m; sourceTree = "<group>"; };
 		A3849DED151FCBA0009289A5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3849DF1151FCBA0009289A5 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A3849DF3151FCBA0009289A5 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -128,8 +132,6 @@
 		A30574A2151FD44A00DA19BD /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				A30574CF151FE1E200DA19BD /* AKNativeAutomaton.h */,
-				A30574D0151FE1E200DA19BD /* AKNativeAutomaton.m */,
 				A30574AB151FD48F00DA19BD /* AKButtonDriver.h */,
 				A30574AC151FD48F00DA19BD /* AKButtonDriver.m */,
 				A30574AD151FD48F00DA19BD /* AKLabelDriver.h */,
@@ -142,6 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				A30574CD151FE15F00DA19BD /* AKAutomaton.h */,
+				A30574CF151FE1E200DA19BD /* AKNativeAutomaton.h */,
+				A30574D0151FE1E200DA19BD /* AKNativeAutomaton.m */,
+				A30574D3151FE54900DA19BD /* AKViewLocator.h */,
+				A30574D4151FE54900DA19BD /* AKViewLocator.m */,
 				A30574B4151FD66B00DA19BD /* Additions */,
 			);
 			path = Core;
@@ -275,6 +281,7 @@
 				A30574CB151FD7A600DA19BD /* UIEvent+Synthesis.h in Headers */,
 				A30574CE151FE15F00DA19BD /* AKAutomaton.h in Headers */,
 				A30574D1151FE1E200DA19BD /* AKNativeAutomaton.h in Headers */,
+				A30574D5151FE54900DA19BD /* AKViewLocator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +443,7 @@
 				A30574C2151FD6CA00DA19BD /* UITouch+Synthesis.m in Sources */,
 				A30574CC151FD7A600DA19BD /* UIEvent+Synthesis.m in Sources */,
 				A30574D2151FE1E200DA19BD /* AKNativeAutomaton.m in Sources */,
+				A30574D6151FE54900DA19BD /* AKViewLocator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

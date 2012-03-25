@@ -8,6 +8,8 @@
 
 #import "AKButtonDriver.h"
 #import "AKNativeAutomaton.h"
+#import "AKViewLocator.h"
+
 
 @implementation AKButtonDriver {
   UIButton *_button;
@@ -21,20 +23,7 @@
 
 + (id)inWindow:(UIWindow *)window withTag:(NSInteger)tag
 {
-  UIView *view = [window viewWithTag:tag];
-  
-  if (view == nil) {
-    @throw [NSException exceptionWithName:NSInvalidArgumentException 
-                                   reason:[NSString stringWithFormat:@"Could not locate subview in window with tag %d", tag] 
-                                 userInfo:nil];
-  }
-  
-  if (![view isKindOfClass:[UIButton class]]) {
-    @throw [NSException exceptionWithName:NSInvalidArgumentException 
-                                   reason:[NSString stringWithFormat:@"Expected subview of type UIButton, was %@", view] 
-                                 userInfo:nil];
-  }
-  
+  UIView *view = [[AKViewLocator locatorWithRootView:window] locateSubviewWithTag:tag ofType:[UIButton class]];
   return [[self alloc] initWithButton:(UIButton *)view automaton:[self defaultAutomaton]];
 }
 
