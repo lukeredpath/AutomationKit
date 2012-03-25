@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3849DF2151FCBA0009289A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
+		A3849DF4151FCBA0009289A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF3151FCBA0009289A5 /* Foundation.framework */; };
+		A3849DF6151FCBA0009289A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */; };
+		A3849DFC151FCBA0009289A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3849DFA151FCBA0009289A5 /* InfoPlist.strings */; };
+		A3849DFE151FCBA0009289A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3849DFD151FCBA0009289A5 /* main.m */; };
+		A3849E02151FCBA0009289A5 /* LRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3849E01151FCBA0009289A5 /* LRAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A3849DED151FCBA0009289A5 /* AutomationKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutomationKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3849DF1151FCBA0009289A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A3849DF3151FCBA0009289A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A3849DF9151FCBA0009289A5 /* AutomationKit-Info.plist */ = {isa = PBXFileReference; path = "AutomationKit-Info.plist"; sourceTree = "<group>"; };
+		A3849DFB151FCBA0009289A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A3849DFD151FCBA0009289A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3849DFF151FCBA0009289A5 /* AutomationKit-Prefix.pch */ = {isa = PBXFileReference; path = "AutomationKit-Prefix.pch"; sourceTree = "<group>"; };
+		A3849E00151FCBA0009289A5 /* LRAppDelegate.h */ = {isa = PBXFileReference; path = LRAppDelegate.h; sourceTree = "<group>"; };
+		A3849E01151FCBA0009289A5 /* LRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3849DEA151FCBA0009289A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3849DF2151FCBA0009289A5 /* UIKit.framework in Frameworks */,
+				A3849DF4151FCBA0009289A5 /* Foundation.framework in Frameworks */,
+				A3849DF6151FCBA0009289A5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3849DE2151FCBA0009289A5 = {
+			isa = PBXGroup;
+			children = (
+				A3849DF7151FCBA0009289A5 /* AutomationKit */,
+				A3849DF0151FCBA0009289A5 /* Frameworks */,
+				A3849DEE151FCBA0009289A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3849DEE151FCBA0009289A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3849DED151FCBA0009289A5 /* AutomationKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3849DF0151FCBA0009289A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3849DF1151FCBA0009289A5 /* UIKit.framework */,
+				A3849DF3151FCBA0009289A5 /* Foundation.framework */,
+				A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3849DF7151FCBA0009289A5 /* AutomationKit */ = {
+			isa = PBXGroup;
+			children = (
+				A3849E00151FCBA0009289A5 /* LRAppDelegate.h */,
+				A3849E01151FCBA0009289A5 /* LRAppDelegate.m */,
+				A3849DF8151FCBA0009289A5 /* Supporting Files */,
+			);
+			path = AutomationKit;
+			sourceTree = "<group>";
+		};
+		A3849DF8151FCBA0009289A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3849DF9151FCBA0009289A5 /* AutomationKit-Info.plist */,
+				A3849DFA151FCBA0009289A5 /* InfoPlist.strings */,
+				A3849DFD151FCBA0009289A5 /* main.m */,
+				A3849DFF151FCBA0009289A5 /* AutomationKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3849DEC151FCBA0009289A5 /* AutomationKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3849E05151FCBA0009289A5 /* Build configuration list for PBXNativeTarget "AutomationKit" */;
+			buildPhases = (
+				A3849DE9151FCBA0009289A5 /* Sources */,
+				A3849DEA151FCBA0009289A5 /* Frameworks */,
+				A3849DEB151FCBA0009289A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutomationKit;
+			productName = AutomationKit;
+			productReference = A3849DED151FCBA0009289A5 /* AutomationKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3849DE4151FCBA0009289A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LR;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "LJR Software Limited";
+			};
+			buildConfigurationList = A3849DE7151FCBA0009289A5 /* Build configuration list for PBXProject "AutomationKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A3849DE2151FCBA0009289A5;
+			productRefGroup = A3849DEE151FCBA0009289A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3849DEC151FCBA0009289A5 /* AutomationKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3849DEB151FCBA0009289A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3849DFC151FCBA0009289A5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3849DE9151FCBA0009289A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3849DFE151FCBA0009289A5 /* main.m in Sources */,
+				A3849E02151FCBA0009289A5 /* LRAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A3849DFA151FCBA0009289A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3849DFB151FCBA0009289A5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3849E03151FCBA0009289A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A3849E04151FCBA0009289A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3849E06151FCBA0009289A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutomationKit/AutomationKit-Prefix.pch";
+				INFOPLIST_FILE = "AutomationKit/AutomationKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A3849E07151FCBA0009289A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutomationKit/AutomationKit-Prefix.pch";
+				INFOPLIST_FILE = "AutomationKit/AutomationKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3849DE7151FCBA0009289A5 /* Build configuration list for PBXProject "AutomationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3849E03151FCBA0009289A5 /* Debug */,
+				A3849E04151FCBA0009289A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3849E05151FCBA0009289A5 /* Build configuration list for PBXNativeTarget "AutomationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3849E06151FCBA0009289A5 /* Debug */,
+				A3849E07151FCBA0009289A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3849DE4151FCBA0009289A5 /* Project object */;
+}
