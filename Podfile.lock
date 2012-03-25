@@ -1,0 +1,9 @@
+PODS:
+  - Expecta (0.1.3)
+  - LRMocky (0.9.1)
+  - Specta (0.1.4)
+
+DEPENDENCIES:
+  - Expecta
+  - LRMocky (from `git://github.com/lukeredpath/LRMocky')
+  - Specta

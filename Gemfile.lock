@@ -1,0 +1,29 @@
+GIT
+  remote: git://github.com/CocoaPods/CocoaPods
+  revision: a42428a7eb0a2c5933e3e5ada48e73c3e3e1d6db
+  specs:
+    cocoapods (0.5.1)
+      popen4 (~> 0.1.2)
+      xcodeproj (~> 0.1.0)
+
+GIT
+  remote: git://github.com/CocoaPods/Xcodeproj
+  revision: 338e4d37f282121754f10f6d169256a57a64860d
+  specs:
+    xcodeproj (0.1.0)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    Platform (0.4.0)
+    open4 (1.3.0)
+    popen4 (0.1.2)
+      Platform (>= 0.4.0)
+      open4 (>= 0.4.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cocoapods!
+  xcodeproj!

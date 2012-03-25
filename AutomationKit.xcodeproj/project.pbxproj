@@ -7,25 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3057497151FCDE200DA19BD /* ClickingButtonWhichDisplaysLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3057495151FCD8700DA19BD /* ClickingButtonWhichDisplaysLabel.m */; };
+		A30574A0151FCED300DA19BD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A305749F151FCED300DA19BD /* MainWindow.xib */; };
+		A30574A1151FCFC000DA19BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
+		A30574AF151FD48F00DA19BD /* AKButtonDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = A30574AB151FD48F00DA19BD /* AKButtonDriver.h */; };
+		A30574B0151FD48F00DA19BD /* AKButtonDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = A30574AC151FD48F00DA19BD /* AKButtonDriver.m */; };
+		A30574B1151FD48F00DA19BD /* AKLabelDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = A30574AD151FD48F00DA19BD /* AKLabelDriver.h */; };
+		A30574B2151FD48F00DA19BD /* AKLabelDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = A30574AE151FD48F00DA19BD /* AKLabelDriver.m */; };
+		A30574C1151FD6CA00DA19BD /* UITouch+Synthesis.h in Headers */ = {isa = PBXBuildFile; fileRef = A30574BD151FD6CA00DA19BD /* UITouch+Synthesis.h */; };
+		A30574C2151FD6CA00DA19BD /* UITouch+Synthesis.m in Sources */ = {isa = PBXBuildFile; fileRef = A30574BE151FD6CA00DA19BD /* UITouch+Synthesis.m */; };
+		A30574CB151FD7A600DA19BD /* UIEvent+Synthesis.h in Headers */ = {isa = PBXBuildFile; fileRef = A30574C9151FD7A600DA19BD /* UIEvent+Synthesis.h */; };
+		A30574CC151FD7A600DA19BD /* UIEvent+Synthesis.m in Sources */ = {isa = PBXBuildFile; fileRef = A30574CA151FD7A600DA19BD /* UIEvent+Synthesis.m */; };
 		A3849DF2151FCBA0009289A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
 		A3849DF4151FCBA0009289A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF3151FCBA0009289A5 /* Foundation.framework */; };
 		A3849DF6151FCBA0009289A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */; };
 		A3849DFC151FCBA0009289A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3849DFA151FCBA0009289A5 /* InfoPlist.strings */; };
 		A3849DFE151FCBA0009289A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3849DFD151FCBA0009289A5 /* main.m */; };
 		A3849E02151FCBA0009289A5 /* LRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3849E01151FCBA0009289A5 /* LRAppDelegate.m */; };
+		A3849E0D151FCBCF009289A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF3151FCBA0009289A5 /* Foundation.framework */; };
+		A3849E1B151FCBCF009289A5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849E1A151FCBCF009289A5 /* SenTestingKit.framework */; };
+		A3849E1C151FCBCF009289A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
+		A3849E1D151FCBCF009289A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF3151FCBA0009289A5 /* Foundation.framework */; };
+		A3849E20151FCBCF009289A5 /* libAutomationKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849E0C151FCBCF009289A5 /* libAutomationKit.a */; };
+		A3849E26151FCBCF009289A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3849E24151FCBCF009289A5 /* InfoPlist.strings */; };
+		A3849E3A151FCCCF009289A5 /* libPods-tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849E39151FCCCF009289A5 /* libPods-tests.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A3849E1E151FCBCF009289A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3849DE4151FCBA0009289A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3849E0B151FCBCF009289A5;
+			remoteInfo = AutomationKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		A3849DED151FCBA0009289A5 /* AutomationKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutomationKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3849DF1151FCBA0009289A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A3849DF3151FCBA0009289A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A3849DF9151FCBA0009289A5 /* AutomationKit-Info.plist */ = {isa = PBXFileReference; path = "AutomationKit-Info.plist"; sourceTree = "<group>"; };
-		A3849DFB151FCBA0009289A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A3849DFD151FCBA0009289A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A3849DFF151FCBA0009289A5 /* AutomationKit-Prefix.pch */ = {isa = PBXFileReference; path = "AutomationKit-Prefix.pch"; sourceTree = "<group>"; };
-		A3849E00151FCBA0009289A5 /* LRAppDelegate.h */ = {isa = PBXFileReference; path = LRAppDelegate.h; sourceTree = "<group>"; };
-		A3849E01151FCBA0009289A5 /* LRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRAppDelegate.m; sourceTree = "<group>"; };
+		0956E8567CD24176A7C11589 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		A3057495151FCD8700DA19BD /* ClickingButtonWhichDisplaysLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClickingButtonWhichDisplaysLabel.m; path = Acceptance/ClickingButtonWhichDisplaysLabel.m; sourceTree = "<group>"; };
+		A305749F151FCED300DA19BD /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		A30574AB151FD48F00DA19BD /* AKButtonDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKButtonDriver.h; sourceTree = "<group>"; };
+		A30574AC151FD48F00DA19BD /* AKButtonDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKButtonDriver.m; sourceTree = "<group>"; };
+		A30574AD151FD48F00DA19BD /* AKLabelDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKLabelDriver.h; sourceTree = "<group>"; };
+		A30574AE151FD48F00DA19BD /* AKLabelDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLabelDriver.m; sourceTree = "<group>"; };
+		A30574BD151FD6CA00DA19BD /* UITouch+Synthesis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+Synthesis.h"; sourceTree = "<group>"; };
+		A30574BE151FD6CA00DA19BD /* UITouch+Synthesis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+Synthesis.m"; sourceTree = "<group>"; };
+		A30574C9151FD7A600DA19BD /* UIEvent+Synthesis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIEvent+Synthesis.h"; sourceTree = "<group>"; };
+		A30574CA151FD7A600DA19BD /* UIEvent+Synthesis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIEvent+Synthesis.m"; sourceTree = "<group>"; };
+		A3849DED151FCBA0009289A5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3849DF1151FCBA0009289A5 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A3849DF3151FCBA0009289A5 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A3849DF9151FCBA0009289A5 /* AutomationKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AutomationKit-Info.plist"; sourceTree = "<group>"; };
+		A3849DFB151FCBA0009289A5 /* en */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A3849DFD151FCBA0009289A5 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3849DFF151FCBA0009289A5 /* AutomationKit-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutomationKit-Prefix.pch"; sourceTree = "<group>"; };
+		A3849E00151FCBA0009289A5 /* LRAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LRAppDelegate.h; sourceTree = "<group>"; };
+		A3849E01151FCBA0009289A5 /* LRAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LRAppDelegate.m; sourceTree = "<group>"; };
+		A3849E0C151FCBCF009289A5 /* libAutomationKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAutomationKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3849E10151FCBCF009289A5 /* AutomationKit-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutomationKit-Prefix.pch"; sourceTree = "<group>"; };
+		A3849E19151FCBCF009289A5 /* AcceptanceTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcceptanceTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3849E1A151FCBCF009289A5 /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A3849E23151FCBCF009289A5 /* AutomationKitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AutomationKitTests-Info.plist"; sourceTree = "<group>"; };
+		A3849E25151FCBCF009289A5 /* en */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A3849E39151FCCCF009289A5 /* libPods-tests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-tests.a"; path = "Pods/build/Release-iphoneos/libPods-tests.a"; sourceTree = "<group>"; };
+		A3849E3B151FCCE6009289A5 /* Pods-tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-tests.xcconfig"; path = "Pods/Pods-tests.xcconfig"; sourceTree = "<group>"; };
+		D031B2375C2E437686797431 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,22 +87,86 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3849E09151FCBCF009289A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3849E0D151FCBCF009289A5 /* Foundation.framework in Frameworks */,
+				A30574A1151FCFC000DA19BD /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3849E15151FCBCF009289A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3849E3A151FCCCF009289A5 /* libPods-tests.a in Frameworks */,
+				A3849E1B151FCBCF009289A5 /* SenTestingKit.framework in Frameworks */,
+				A3849E1C151FCBCF009289A5 /* UIKit.framework in Frameworks */,
+				A3849E1D151FCBCF009289A5 /* Foundation.framework in Frameworks */,
+				A3849E20151FCBCF009289A5 /* libAutomationKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3057493151FCD6400DA19BD /* Acceptance */ = {
+			isa = PBXGroup;
+			children = (
+				A3057495151FCD8700DA19BD /* ClickingButtonWhichDisplaysLabel.m */,
+			);
+			name = Acceptance;
+			sourceTree = "<group>";
+		};
+		A30574A2151FD44A00DA19BD /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A30574AB151FD48F00DA19BD /* AKButtonDriver.h */,
+				A30574AC151FD48F00DA19BD /* AKButtonDriver.m */,
+				A30574AD151FD48F00DA19BD /* AKLabelDriver.h */,
+				A30574AE151FD48F00DA19BD /* AKLabelDriver.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A30574B3151FD62C00DA19BD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A30574B4151FD66B00DA19BD /* Additions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A30574B4151FD66B00DA19BD /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				A30574BD151FD6CA00DA19BD /* UITouch+Synthesis.h */,
+				A30574BE151FD6CA00DA19BD /* UITouch+Synthesis.m */,
+				A30574C9151FD7A600DA19BD /* UIEvent+Synthesis.h */,
+				A30574CA151FD7A600DA19BD /* UIEvent+Synthesis.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
 		A3849DE2151FCBA0009289A5 = {
 			isa = PBXGroup;
 			children = (
-				A3849DF7151FCBA0009289A5 /* AutomationKit */,
+				A3849E0E151FCBCF009289A5 /* AutomationKit */,
+				A3849DF7151FCBA0009289A5 /* Demo */,
+				A3849E21151FCBCF009289A5 /* Tests */,
 				A3849DF0151FCBA0009289A5 /* Frameworks */,
 				A3849DEE151FCBA0009289A5 /* Products */,
+				A3849E37151FCCAB009289A5 /* Pods Products */,
 			);
 			sourceTree = "<group>";
 		};
 		A3849DEE151FCBA0009289A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3849DED151FCBA0009289A5 /* AutomationKit.app */,
+				A3849DED151FCBA0009289A5 /* Demo.app */,
+				A3849E0C151FCBCF009289A5 /* libAutomationKit.a */,
+				A3849E19151FCBCF009289A5 /* AcceptanceTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,17 +177,21 @@
 				A3849DF1151FCBA0009289A5 /* UIKit.framework */,
 				A3849DF3151FCBA0009289A5 /* Foundation.framework */,
 				A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */,
+				A3849E1A151FCBCF009289A5 /* SenTestingKit.framework */,
+				D031B2375C2E437686797431 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A3849DF7151FCBA0009289A5 /* AutomationKit */ = {
+		A3849DF7151FCBA0009289A5 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
 				A3849E00151FCBA0009289A5 /* LRAppDelegate.h */,
 				A3849E01151FCBA0009289A5 /* LRAppDelegate.m */,
+				A305749F151FCED300DA19BD /* MainWindow.xib */,
 				A3849DF8151FCBA0009289A5 /* Supporting Files */,
 			);
+			name = Demo;
 			path = AutomationKit;
 			sourceTree = "<group>";
 		};
@@ -90,16 +206,96 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A3849E0E151FCBCF009289A5 /* AutomationKit */ = {
+			isa = PBXGroup;
+			children = (
+				A30574B3151FD62C00DA19BD /* Core */,
+				A30574A2151FD44A00DA19BD /* UIKit */,
+				A3849E0F151FCBCF009289A5 /* Supporting Files */,
+			);
+			path = AutomationKit;
+			sourceTree = "<group>";
+		};
+		A3849E0F151FCBCF009289A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3849E10151FCBCF009289A5 /* AutomationKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3849E21151FCBCF009289A5 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A3057493151FCD6400DA19BD /* Acceptance */,
+				A3849E22151FCBCF009289A5 /* Supporting Files */,
+			);
+			name = Tests;
+			path = AutomationKitTests;
+			sourceTree = "<group>";
+		};
+		A3849E22151FCBCF009289A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3849E23151FCBCF009289A5 /* AutomationKitTests-Info.plist */,
+				A3849E24151FCBCF009289A5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3849E37151FCCAB009289A5 /* Pods Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3849E3B151FCCE6009289A5 /* Pods-tests.xcconfig */,
+				A3849E39151FCCCF009289A5 /* libPods-tests.a */,
+				0956E8567CD24176A7C11589 /* Pods.xcconfig */,
+			);
+			name = "Pods Products";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A3849E0A151FCBCF009289A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30574AF151FD48F00DA19BD /* AKButtonDriver.h in Headers */,
+				A30574B1151FD48F00DA19BD /* AKLabelDriver.h in Headers */,
+				A30574C1151FD6CA00DA19BD /* UITouch+Synthesis.h in Headers */,
+				A30574CB151FD7A600DA19BD /* UIEvent+Synthesis.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		A3849DEC151FCBA0009289A5 /* AutomationKit */ = {
+		A3849DEC151FCBA0009289A5 /* Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3849E05151FCBA0009289A5 /* Build configuration list for PBXNativeTarget "AutomationKit" */;
+			buildConfigurationList = A3849E05151FCBA0009289A5 /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
 				A3849DE9151FCBA0009289A5 /* Sources */,
 				A3849DEA151FCBA0009289A5 /* Frameworks */,
 				A3849DEB151FCBA0009289A5 /* Resources */,
+				76C17D5C40314836B59F5A2B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = AutomationKit;
+			productReference = A3849DED151FCBA0009289A5 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3849E0B151FCBCF009289A5 /* AutomationKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3849E2A151FCBCF009289A5 /* Build configuration list for PBXNativeTarget "AutomationKit" */;
+			buildPhases = (
+				A3849E08151FCBCF009289A5 /* Sources */,
+				A3849E09151FCBCF009289A5 /* Frameworks */,
+				A3849E0A151FCBCF009289A5 /* Headers */,
+				76C17D5C40314836B59F5A2B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -107,8 +303,28 @@
 			);
 			name = AutomationKit;
 			productName = AutomationKit;
-			productReference = A3849DED151FCBA0009289A5 /* AutomationKit.app */;
-			productType = "com.apple.product-type.application";
+			productReference = A3849E0C151FCBCF009289A5 /* libAutomationKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A3849E18151FCBCF009289A5 /* AcceptanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3849E2D151FCBCF009289A5 /* Build configuration list for PBXNativeTarget "AcceptanceTests" */;
+			buildPhases = (
+				A3849E14151FCBCF009289A5 /* Sources */,
+				A3849E15151FCBCF009289A5 /* Frameworks */,
+				A3849E16151FCBCF009289A5 /* Resources */,
+				A3849E17151FCBCF009289A5 /* ShellScript */,
+				76C17D5C40314836B59F5A2B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3849E1F151FCBCF009289A5 /* PBXTargetDependency */,
+			);
+			name = AcceptanceTests;
+			productName = AutomationKitTests;
+			productReference = A3849E19151FCBCF009289A5 /* AcceptanceTests.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -116,7 +332,7 @@
 		A3849DE4151FCBA0009289A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = LR;
+				CLASSPREFIX = AK;
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "LJR Software Limited";
 			};
@@ -132,7 +348,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A3849DEC151FCBA0009289A5 /* AutomationKit */,
+				A3849DEC151FCBA0009289A5 /* Demo */,
+				A3849E0B151FCBCF009289A5 /* AutomationKit */,
+				A3849E18151FCBCF009289A5 /* AcceptanceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -143,10 +361,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3849DFC151FCBA0009289A5 /* InfoPlist.strings in Resources */,
+				A30574A0151FCED300DA19BD /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3849E16151FCBCF009289A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3849E26151FCBCF009289A5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76C17D5C40314836B59F5A2B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+			showEnvVarsInLog = 0;
+		};
+		A3849E17151FCBCF009289A5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3849DE9151FCBA0009289A5 /* Sources */ = {
@@ -158,13 +416,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3849E08151FCBCF009289A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30574B0151FD48F00DA19BD /* AKButtonDriver.m in Sources */,
+				A30574B2151FD48F00DA19BD /* AKLabelDriver.m in Sources */,
+				A30574C2151FD6CA00DA19BD /* UITouch+Synthesis.m in Sources */,
+				A30574CC151FD7A600DA19BD /* UIEvent+Synthesis.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3849E14151FCBCF009289A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3057497151FCDE200DA19BD /* ClickingButtonWhichDisplaysLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3849E1F151FCBCF009289A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3849E0B151FCBCF009289A5 /* AutomationKit */;
+			targetProxy = A3849E1E151FCBCF009289A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A3849DFA151FCBA0009289A5 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A3849DFB151FCBA0009289A5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A3849E24151FCBCF009289A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3849E25151FCBCF009289A5 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -220,10 +513,13 @@
 		A3849E06151FCBA0009289A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutomationKit/AutomationKit-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "AutomationKit/AutomationKit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -231,11 +527,82 @@
 		A3849E07151FCBA0009289A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutomationKit/AutomationKit-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "AutomationKit/AutomationKit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A3849E2B151FCBCF009289A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AutomationKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutomationKit/AutomationKit-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A3849E2C151FCBCF009289A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AutomationKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutomationKit/AutomationKit-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A3849E2E151FCBCF009289A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3849E3B151FCCE6009289A5 /* Pods-tests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
+				DSTROOT = /tmp/xcodeproj.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutomationKit/AutomationKit-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "AutomationKitTests/AutomationKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A3849E2F151FCBCF009289A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3849E3B151FCCE6009289A5 /* Pods-tests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
+				DSTROOT = /tmp/xcodeproj.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutomationKit/AutomationKit-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "AutomationKitTests/AutomationKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -251,13 +618,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3849E05151FCBA0009289A5 /* Build configuration list for PBXNativeTarget "AutomationKit" */ = {
+		A3849E05151FCBA0009289A5 /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A3849E06151FCBA0009289A5 /* Debug */,
 				A3849E07151FCBA0009289A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3849E2A151FCBCF009289A5 /* Build configuration list for PBXNativeTarget "AutomationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3849E2B151FCBCF009289A5 /* Debug */,
+				A3849E2C151FCBCF009289A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3849E2D151FCBCF009289A5 /* Build configuration list for PBXNativeTarget "AcceptanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3849E2E151FCBCF009289A5 /* Debug */,
+				A3849E2F151FCBCF009289A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
