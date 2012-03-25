@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AKAutomaton.h"
 
 @interface AKButtonDriver : NSObject
 
-- (id)initWithButton:(UIButton *)button;
+- (id)initWithButton:(UIButton *)button automaton:(id<AKAutomaton>)automaton;
 + (id)inWindow:(UIWindow *)window withTag:(NSInteger)tag;
 
 - (void)tap;

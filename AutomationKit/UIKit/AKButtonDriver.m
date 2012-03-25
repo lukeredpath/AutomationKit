@@ -7,11 +7,16 @@
 //
 
 #import "AKButtonDriver.h"
-#import "UITouch+Synthesis.h"
-#import "UIEvent+Synthesis.h"
+#import "AKNativeAutomaton.h"
 
 @implementation AKButtonDriver {
   UIButton *_button;
+  id<AKAutomaton> _automaton;
+}
+
++ (id<AKAutomaton>)defaultAutomaton
+{
+  return [AKNativeAutomaton automaton];
 }
 
 + (id)inWindow:(UIWindow *)window withTag:(NSInteger)tag
@@ -30,31 +35,21 @@
                                  userInfo:nil];
   }
   
-  return [[self alloc] initWithButton:(UIButton *)view];
+  return [[self alloc] initWithButton:(UIButton *)view automaton:[self defaultAutomaton]];
 }
 
-- (id)initWithButton:(UIButton *)button
+- (id)initWithButton:(UIButton *)button automaton:(id<AKAutomaton>)automaton
 {
   if ((self = [super init])) {
     _button = button;
+    _automaton = automaton;
   }
   return self;
 }
 
 - (void)tap
 {
-  UITouch *touch = [[UITouch alloc] initAtPoint:_button.center inView:_button];
-  UIEvent *event = [UIEvent AK_touchEventWithTouch:touch];
-  
-  [touch setPhase:UITouchPhaseBegan];
-  [[UIApplication sharedApplication] sendEvent:event];
-  
-  [touch setPhase:UITouchPhaseEnded];
-  [[UIApplication sharedApplication] sendEvent:event];
-  
-  if ([touch.view isDescendantOfView:_button] && [_button canBecomeFirstResponder]) {
-    [_button becomeFirstResponder];
-  }
+  [_automaton tapView:_button atPoint:_button.center];
 }
 
 @end
