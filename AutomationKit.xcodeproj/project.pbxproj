@@ -43,8 +43,6 @@
 		A305753E151FFFCF00DA19BD /* AKKeyValueCriteria.h in Headers */ = {isa = PBXBuildFile; fileRef = A305753C151FFFCF00DA19BD /* AKKeyValueCriteria.h */; };
 		A305753F151FFFCF00DA19BD /* AKKeyValueCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = A305753D151FFFCF00DA19BD /* AKKeyValueCriteria.m */; };
 		A30575421520004B00DA19BD /* AKKeyValueCriteriaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575401520002400DA19BD /* AKKeyValueCriteriaTest.m */; };
-		A30575451520021600DA19BD /* AKSingleViewFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = A30575431520021500DA19BD /* AKSingleViewFinder.h */; };
-		A30575461520021600DA19BD /* AKSingleViewFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575441520021600DA19BD /* AKSingleViewFinder.m */; };
 		A3057549152003B500DA19BD /* AKTypeOfView.h in Headers */ = {isa = PBXBuildFile; fileRef = A3057547152003B500DA19BD /* AKTypeOfView.h */; };
 		A305754A152003B500DA19BD /* AKTypeOfView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3057548152003B500DA19BD /* AKTypeOfView.m */; };
 		A305754D1520049800DA19BD /* AKAllOfCriteria.h in Headers */ = {isa = PBXBuildFile; fileRef = A305754B1520049800DA19BD /* AKAllOfCriteria.h */; };
@@ -116,8 +114,6 @@
 		A305753C151FFFCF00DA19BD /* AKKeyValueCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKKeyValueCriteria.h; sourceTree = "<group>"; };
 		A305753D151FFFCF00DA19BD /* AKKeyValueCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKKeyValueCriteria.m; sourceTree = "<group>"; };
 		A30575401520002400DA19BD /* AKKeyValueCriteriaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKKeyValueCriteriaTest.m; sourceTree = "<group>"; };
-		A30575431520021500DA19BD /* AKSingleViewFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSingleViewFinder.h; sourceTree = "<group>"; };
-		A30575441520021600DA19BD /* AKSingleViewFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSingleViewFinder.m; sourceTree = "<group>"; };
 		A3057547152003B500DA19BD /* AKTypeOfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTypeOfView.h; sourceTree = "<group>"; };
 		A3057548152003B500DA19BD /* AKTypeOfView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTypeOfView.m; sourceTree = "<group>"; };
 		A305754B1520049800DA19BD /* AKAllOfCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAllOfCriteria.h; sourceTree = "<group>"; };
@@ -262,8 +258,6 @@
 				A3057512151FF55700DA19BD /* AKTaggedViewFinder.m */,
 				A3057522151FFA9200DA19BD /* AKRecursiveViewFinder.h */,
 				A3057523151FFA9200DA19BD /* AKRecursiveViewFinder.m */,
-				A30575431520021500DA19BD /* AKSingleViewFinder.h */,
-				A30575441520021600DA19BD /* AKSingleViewFinder.m */,
 				A305750D151FF4B600DA19BD /* AKMainWindowFinder.h */,
 				A305750E151FF4B600DA19BD /* AKMainWindowFinder.m */,
 			);
@@ -413,7 +407,6 @@
 				A3057528151FFB0500DA19BD /* AKViewCriteria.h in Headers */,
 				A305753A151FFED500DA19BD /* AKAnyView.h in Headers */,
 				A305753E151FFFCF00DA19BD /* AKKeyValueCriteria.h in Headers */,
-				A30575451520021600DA19BD /* AKSingleViewFinder.h in Headers */,
 				A3057549152003B500DA19BD /* AKTypeOfView.h in Headers */,
 				A305754D1520049800DA19BD /* AKAllOfCriteria.h in Headers */,
 			);
@@ -647,7 +640,6 @@
 				A3057525151FFA9200DA19BD /* AKRecursiveViewFinder.m in Sources */,
 				A305753B151FFED500DA19BD /* AKAnyView.m in Sources */,
 				A305753F151FFFCF00DA19BD /* AKKeyValueCriteria.m in Sources */,
-				A30575461520021600DA19BD /* AKSingleViewFinder.m in Sources */,
 				A305754A152003B500DA19BD /* AKTypeOfView.m in Sources */,
 				A305754E1520049800DA19BD /* AKAllOfCriteria.m in Sources */,
 			);
