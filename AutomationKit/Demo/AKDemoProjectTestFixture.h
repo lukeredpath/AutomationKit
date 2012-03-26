@@ -1,5 +1,5 @@
 //
-//  Automaton.h
+//  AKDemoProjectTestFixture.h
 //  AutomationKit
 //
 //  Created by Luke Redpath on 26/03/2012.
@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol AKAutomaton <NSObject>
+@protocol AKDemoProjectTestFixture <NSObject>
 
-- (void)tapView:(UIView *)view;
-- (void)tapView:(UIView *)view atPoint:(CGPoint)point;
+- (void)setUp;
+- (void)tearDown;
 
 @end

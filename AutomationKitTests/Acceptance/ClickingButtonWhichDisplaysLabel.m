@@ -7,6 +7,7 @@
 //
 
 #import "TestHelper.h"
+#import "AKButtonWithLabel.h"
 #import "LRAppDelegate.h"
 #import "AKButtonDriver.h"
 #import "AKLabelDriver.h"
@@ -19,22 +20,25 @@ UIWindow *getMainWindow() {
   return [getAppDelegate() window];
 }
 
+UIView *getRootView()
+{
+  return [getMainWindow().rootViewController view];
+}
+
 SpecBegin(ClickingButtonWhichDisplaysLabel)
 
 describe(@"Given a button that displays a label when clicked", ^{
   
   __block AKButtonDriver *theButton;
   __block AKLabelDriver *theLabel;
-  __block UIWindow *window;
   
   beforeEach(^{
-    window = getMainWindow();
-    getAppDelegate().theLabel.hidden = YES;
+    [getAppDelegate() loadFixtureNamed:@"AKButtonWithLabel"];
   });
   
   specify(@"we can click on the button and assert the label is visible using view tags", ^{
-    theButton = [AKButtonDriver inWindow:window withTag:AppDelegateView.CLICK_ME_BUTTON];
-    theLabel = [AKLabelDriver inWindow:window withTag:AppDelegateView.CLICK_ME_LABEL];
+    theButton = [AKButtonDriver inView:getRootView() withTag:AKButtonWithLabelView.CLICK_ME_BUTTON];
+    theLabel = [AKLabelDriver inView:getRootView() withTag:AKButtonWithLabelView.CLICK_ME_LABEL];
     
     [theButton tap];
 
@@ -42,8 +46,8 @@ describe(@"Given a button that displays a label when clicked", ^{
   });
   
   specify(@"we can click on the button and assert the label is visible using property queries", ^{    
-    theButton = [AKButtonDriver inWindow:window withTitle:@"CLICK ME"];
-    theLabel = [AKLabelDriver inWindow:window withText:@"You Clicked Me"];
+    theButton = [AKButtonDriver inView:getRootView() withTitle:@"CLICK ME"];
+    theLabel = [AKLabelDriver inView:getRootView() withText:@"You Clicked Me"];
 
     [theButton tap];
     

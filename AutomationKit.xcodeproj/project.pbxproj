@@ -57,6 +57,8 @@
 		A305759F1520EDD800DA19BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
 		A30575A21520F0C800DA19BD /* AKViewCriteriaWithBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = A30575A01520F0C800DA19BD /* AKViewCriteriaWithBlock.h */; };
 		A30575A31520F0C800DA19BD /* AKViewCriteriaWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575A11520F0C800DA19BD /* AKViewCriteriaWithBlock.m */; };
+		A30575B51521256B00DA19BD /* AKButtonWithLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30575B21521256800DA19BD /* AKButtonWithLabel.xib */; };
+		A30575B61521257000DA19BD /* AKButtonWithLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575B11521256800DA19BD /* AKButtonWithLabel.m */; };
 		A3849DF2151FCBA0009289A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
 		A3849DF4151FCBA0009289A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF3151FCBA0009289A5 /* Foundation.framework */; };
 		A3849DF6151FCBA0009289A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */; };
@@ -138,6 +140,10 @@
 		A305759C1520ED4500DA19BD /* AKViewAssertionProbeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKViewAssertionProbeTest.m; sourceTree = "<group>"; };
 		A30575A01520F0C800DA19BD /* AKViewCriteriaWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKViewCriteriaWithBlock.h; sourceTree = "<group>"; };
 		A30575A11520F0C800DA19BD /* AKViewCriteriaWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKViewCriteriaWithBlock.m; sourceTree = "<group>"; };
+		A30575B01521256800DA19BD /* AKButtonWithLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKButtonWithLabel.h; sourceTree = "<group>"; };
+		A30575B11521256800DA19BD /* AKButtonWithLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKButtonWithLabel.m; sourceTree = "<group>"; };
+		A30575B21521256800DA19BD /* AKButtonWithLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKButtonWithLabel.xib; sourceTree = "<group>"; };
+		A30575B71521272700DA19BD /* AKDemoProjectTestFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AKDemoProjectTestFixture.h; path = Demo/AKDemoProjectTestFixture.h; sourceTree = "<group>"; };
 		A3849DED151FCBA0009289A5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3849DF1151FCBA0009289A5 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A3849DF3151FCBA0009289A5 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -326,6 +332,17 @@
 			name = Probes;
 			sourceTree = "<group>";
 		};
+		A30575AF1521252500DA19BD /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				A30575B01521256800DA19BD /* AKButtonWithLabel.h */,
+				A30575B11521256800DA19BD /* AKButtonWithLabel.m */,
+				A30575B21521256800DA19BD /* AKButtonWithLabel.xib */,
+			);
+			name = Fixtures;
+			path = ../AutomationKitTests/DemoFixtures;
+			sourceTree = "<group>";
+		};
 		A3849DE2151FCBA0009289A5 = {
 			isa = PBXGroup;
 			children = (
@@ -364,8 +381,10 @@
 		A3849DF7151FCBA0009289A5 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				A30575AF1521252500DA19BD /* Fixtures */,
 				A3849E00151FCBA0009289A5 /* LRAppDelegate.h */,
 				A3849E01151FCBA0009289A5 /* LRAppDelegate.m */,
+				A30575B71521272700DA19BD /* AKDemoProjectTestFixture.h */,
 				A305749F151FCED300DA19BD /* MainWindow.xib */,
 				A3849DF8151FCBA0009289A5 /* Supporting Files */,
 			);
@@ -587,6 +606,7 @@
 			files = (
 				A3849DFC151FCBA0009289A5 /* InfoPlist.strings in Resources */,
 				A30574A0151FCED300DA19BD /* MainWindow.xib in Resources */,
+				A30575B51521256B00DA19BD /* AKButtonWithLabel.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +694,7 @@
 			files = (
 				A3849DFE151FCBA0009289A5 /* main.m in Sources */,
 				A3849E02151FCBA0009289A5 /* LRAppDelegate.m in Sources */,
+				A30575B61521257000DA19BD /* AKButtonWithLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

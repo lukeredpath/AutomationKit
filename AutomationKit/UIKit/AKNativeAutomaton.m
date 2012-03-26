@@ -17,6 +17,13 @@
   return [[self alloc] init];
 }
 
+- (void)tapView:(UIView *)view
+{
+  CGRect frame = view.frame;
+  CGPoint centerPoint = CGPointMake(frame.size.width * 0.5, frame.size.height * 0.5);
+  [self tapView:view atPoint:centerPoint];
+}
+
 - (void)tapView:(UIView *)view atPoint:(CGPoint)point
 {
   UITouch *touch = [[UITouch alloc] initAtPoint:point inView:view];

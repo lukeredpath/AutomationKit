@@ -23,7 +23,7 @@
 {
   if ((self = [super init])) {
     _tapCount = 1;
-    _locationInWindow =	point;
+    _locationInWindow =	[view.window convertPoint:point fromView:view];
     _previousLocationInWindow = _locationInWindow;
     
     UIView *target = [view.window hitTest:_locationInWindow withEvent:nil];

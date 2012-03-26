@@ -7,20 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-
-extern const struct AppDelegateViewStruct
-{
-  int CLICK_ME_BUTTON;
-  int CLICK_ME_LABEL;
-  
-} AppDelegateView;
+#import "AKDemoProjectTestFixture.h"
 
 @interface LRAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) IBOutlet UIWindow *window;
-@property (weak, nonatomic) IBOutlet UIButton *theButton;
-@property (weak, nonatomic) IBOutlet UILabel *theLabel;
+@property (nonatomic, strong) UIViewController<AKDemoProjectTestFixture> *currentFixtureController;
 
-- (IBAction)clickedButton:(id)sender;
+- (void)loadFixtureNamed:(NSString *)fixtureName;
 @end

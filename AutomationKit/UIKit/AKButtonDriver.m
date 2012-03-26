@@ -42,7 +42,7 @@
 - (void)tap
 {
   [self perform:^(UIView *view) {
-    [_automaton tapView:view atPoint:view.center];
+    [_automaton tapView:view];
   }];
 }
 
@@ -67,22 +67,22 @@
   return [[AKPollingProber alloc] init];
 }
 
-+ (id)inWindow:(UIWindow *)window withTag:(NSInteger)tag
++ (id)inView:(UIView *)view withTag:(NSInteger)tag
 {
-  id<AKViewSelector> mainWindowSelector = [AKReferencedViewSelector selectorForView:window];
-  id<AKViewSelector> taggedViewSelector = [[AKTaggedViewFinder alloc] initWithTag:tag parentViewSelector:mainWindowSelector];
+  id<AKViewSelector> parentViewSelector = [AKReferencedViewSelector selectorForView:view];
+  id<AKViewSelector> taggedViewSelector = [[AKTaggedViewFinder alloc] initWithTag:tag parentViewSelector:parentViewSelector];
   
   return [[self alloc] initWithViewSelector:taggedViewSelector 
                                   automaton:[self defaultAutomaton] 
                                      prober:[self defaultProber]];
 }
 
-+ (id)inWindow:(UIWindow *)window withTitle:(NSString *)title
++ (id)inView:(UIView *)view withTitle:(NSString *)title
 {
-  id<AKViewSelector> mainWindowSelector = [AKReferencedViewSelector selectorForView:window];
+  id<AKViewSelector> parentViewSelector = [AKReferencedViewSelector selectorForView:view];
   id<AKViewSelector> buttonViewSelector = [[[AKRecursiveViewFinder alloc] initWithViewType:[UIButton class] 
                                                                                  criteria:AK_hasValueForKey(title, @"currentTitle")
-                                                                       parentViewSelector:mainWindowSelector] limitedToSingleView];
+                                                                       parentViewSelector:parentViewSelector] limitedToSingleView];
   
   return [[self alloc] initWithViewSelector:buttonViewSelector 
                                   automaton:[self defaultAutomaton] 

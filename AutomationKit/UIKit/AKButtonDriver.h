@@ -17,7 +17,7 @@
 
 @interface AKButtonDriver (Factories)
 
-+ (id)inWindow:(UIWindow *)window withTag:(NSInteger)tag;
-+ (id)inWindow:(UIWindow *)window withTitle:(NSString *)title;
++ (id)inView:(UIView *)view withTag:(NSInteger)tag;
++ (id)inView:(UIView *)view withTitle:(NSString *)title;
 
 @end

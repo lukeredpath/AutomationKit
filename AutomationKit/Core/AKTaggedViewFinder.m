@@ -27,7 +27,6 @@
 
 - (UIView *)view
 {
-  [self probe];
   return _theView;
 }
 
@@ -40,7 +39,7 @@
 
 - (BOOL)isSatisfied
 {
-  return (_theView != nil);
+  return ([_parentViewSelector isSatisfied]) && (_theView != nil);
 }
 
 - (NSString *)failureDescription

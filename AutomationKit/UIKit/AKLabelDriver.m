@@ -54,20 +54,20 @@
   return [[AKPollingProber alloc] init];
 }
 
-+ (id)inWindow:(UIWindow *)window withTag:(NSInteger)tag
++ (id)inView:(UIView *)view withTag:(NSInteger)tag
 {
-  id<AKViewSelector> mainWindowSelector = [AKReferencedViewSelector selectorForView:window];
-  id<AKViewSelector> taggedViewSelector = [[AKTaggedViewFinder alloc] initWithTag:tag parentViewSelector:mainWindowSelector];
+  id<AKViewSelector> parentViewSelector = [AKReferencedViewSelector selectorForView:view];
+  id<AKViewSelector> taggedViewSelector = [[AKTaggedViewFinder alloc] initWithTag:tag parentViewSelector:parentViewSelector];
   
   return [[self alloc] initWithViewSelector:taggedViewSelector prober:[self defaultProber]];
 }
 
-+ (id)inWindow:(UIWindow *)window withText:(NSString *)text
++ (id)inView:(UIView *)view withText:(NSString *)text
 {
-  id<AKViewSelector> mainWindowSelector = [AKReferencedViewSelector selectorForView:window];
+  id<AKViewSelector> parentViewSelector = [AKReferencedViewSelector selectorForView:view];
   id<AKViewSelector> labelViewSelector = [[[AKRecursiveViewFinder alloc] initWithViewType:[UILabel class] 
                                                                                 criteria:AK_hasValueForKey(text, @"text") 
-                                                                      parentViewSelector:mainWindowSelector] limitedToSingleView];
+                                                                      parentViewSelector:parentViewSelector] limitedToSingleView];
   
   return [[self alloc] initWithViewSelector:labelViewSelector prober:[self defaultProber]];
 }
