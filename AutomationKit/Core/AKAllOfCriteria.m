@@ -45,4 +45,9 @@
   return YES;
 }
 
+- (NSString *)failureDescription
+{
+  return @"expected to match all of the given criteria";
+}
+
 @end

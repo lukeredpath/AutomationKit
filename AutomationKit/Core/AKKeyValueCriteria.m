@@ -36,6 +36,11 @@
   return [valueForKey isEqual:_value];
 }
 
+- (NSString *)failureDescription
+{
+  return [NSString stringWithFormat:@"expected to have value %@ for key %@", _value, _key];
+}
+
 @end
 
 id<AKViewCriteria> AK_hasValueForKey(id value, NSString *key)

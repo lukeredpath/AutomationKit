@@ -62,6 +62,11 @@
   return [_parentViewSelector isSatisfied];
 }
 
+- (NSString *)failureDescription
+{
+  return [NSString stringWithFormat:@"Couldn't find view matching criteria"];
+}
+
 #pragma mark - Private
 
 - (void)findViewsIn:(UIView *)parentView

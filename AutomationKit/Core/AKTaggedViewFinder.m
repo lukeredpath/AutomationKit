@@ -43,4 +43,9 @@
   return (_theView != nil);
 }
 
+- (NSString *)failureDescription
+{
+  return [NSString stringWithFormat:@"Couldn't find subview with tag %d", _tag];
+}
+
 @end

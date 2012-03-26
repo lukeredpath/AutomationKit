@@ -21,6 +21,11 @@
   return NO;
 }
 
+- (NSString *)failureDescription
+{
+  return @"expected to fail";
+}
+
 @end
 
 id<AKViewCriteria> noView(void)

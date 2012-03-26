@@ -42,6 +42,14 @@
   return [_finder isSatisfied] && [self onlyOneViewFound];
 }
 
+- (NSString *)failureDescription
+{
+  if (![_finder isSatisfied]) {
+    return [_finder failureDescription];
+  }
+  return [NSString stringWithFormat:@"Expected 1 view, but %d were found", [[_finder views] count]];
+}
+
 - (BOOL)onlyOneViewFound
 {
   return [[_finder views] count] == 1;

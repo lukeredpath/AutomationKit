@@ -19,6 +19,8 @@
 
 - (id)initWithView:(UIView *)view
 {
+  NSParameterAssert(view);
+  
   if ((self = [super init])) {
     _view = view;
   }
@@ -42,6 +44,11 @@
 - (BOOL)isSatisfied
 {
   return YES;
+}
+
+- (NSString *)failureDescription
+{
+  return nil; // this can never fail
 }
 
 @end

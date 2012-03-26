@@ -50,6 +50,15 @@
 		A30575871520E07E00DA19BD /* AKProbe.h in Headers */ = {isa = PBXBuildFile; fileRef = A30575861520E07E00DA19BD /* AKProbe.h */; };
 		A305758A1520E35D00DA19BD /* AKSingleViewFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = A30575881520E35D00DA19BD /* AKSingleViewFinder.h */; };
 		A305758B1520E35D00DA19BD /* AKSingleViewFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575891520E35D00DA19BD /* AKSingleViewFinder.m */; };
+		A305758F1520E53100DA19BD /* AKPollingProber.h in Headers */ = {isa = PBXBuildFile; fileRef = A305758D1520E53000DA19BD /* AKPollingProber.h */; };
+		A30575901520E53100DA19BD /* AKPollingProber.m in Sources */ = {isa = PBXBuildFile; fileRef = A305758E1520E53100DA19BD /* AKPollingProber.m */; };
+		A30575951520E74500DA19BD /* AKPollingProbeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575921520E72400DA19BD /* AKPollingProbeTest.m */; };
+		A30575991520EBD200DA19BD /* AKViewAssertionProbe.h in Headers */ = {isa = PBXBuildFile; fileRef = A30575971520EBD200DA19BD /* AKViewAssertionProbe.h */; };
+		A305759A1520EBD200DA19BD /* AKViewAssertionProbe.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575981520EBD200DA19BD /* AKViewAssertionProbe.m */; };
+		A305759E1520ED4C00DA19BD /* AKViewAssertionProbeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A305759C1520ED4500DA19BD /* AKViewAssertionProbeTest.m */; };
+		A305759F1520EDD800DA19BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
+		A30575A21520F0C800DA19BD /* AKViewCriteriaWithBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = A30575A01520F0C800DA19BD /* AKViewCriteriaWithBlock.h */; };
+		A30575A31520F0C800DA19BD /* AKViewCriteriaWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575A11520F0C800DA19BD /* AKViewCriteriaWithBlock.m */; };
 		A3849DF2151FCBA0009289A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
 		A3849DF4151FCBA0009289A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF3151FCBA0009289A5 /* Foundation.framework */; };
 		A3849DF6151FCBA0009289A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */; };
@@ -124,6 +133,15 @@
 		A30575861520E07E00DA19BD /* AKProbe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKProbe.h; sourceTree = "<group>"; };
 		A30575881520E35D00DA19BD /* AKSingleViewFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSingleViewFinder.h; sourceTree = "<group>"; };
 		A30575891520E35D00DA19BD /* AKSingleViewFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSingleViewFinder.m; sourceTree = "<group>"; };
+		A305758C1520E50E00DA19BD /* AKProber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKProber.h; sourceTree = "<group>"; };
+		A305758D1520E53000DA19BD /* AKPollingProber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKPollingProber.h; sourceTree = "<group>"; };
+		A305758E1520E53100DA19BD /* AKPollingProber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKPollingProber.m; sourceTree = "<group>"; };
+		A30575921520E72400DA19BD /* AKPollingProbeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKPollingProbeTest.m; sourceTree = "<group>"; };
+		A30575971520EBD200DA19BD /* AKViewAssertionProbe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKViewAssertionProbe.h; sourceTree = "<group>"; };
+		A30575981520EBD200DA19BD /* AKViewAssertionProbe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKViewAssertionProbe.m; sourceTree = "<group>"; };
+		A305759C1520ED4500DA19BD /* AKViewAssertionProbeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKViewAssertionProbeTest.m; sourceTree = "<group>"; };
+		A30575A01520F0C800DA19BD /* AKViewCriteriaWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKViewCriteriaWithBlock.h; sourceTree = "<group>"; };
+		A30575A11520F0C800DA19BD /* AKViewCriteriaWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKViewCriteriaWithBlock.m; sourceTree = "<group>"; };
 		A3849DED151FCBA0009289A5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3849DF1151FCBA0009289A5 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A3849DF3151FCBA0009289A5 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -154,6 +172,7 @@
 				A30574F7151FE75C00DA19BD /* SenTestingKit.framework in Frameworks */,
 				A30574F9151FE75C00DA19BD /* Foundation.framework in Frameworks */,
 				A30574FA151FE75C00DA19BD /* libAutomationKit.a in Frameworks */,
+				A305759F1520EDD800DA19BD /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,13 +233,17 @@
 		A30574B3151FD62C00DA19BD /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A30575961520EBC400DA19BD /* Probes */,
 				A30575791520D4C800DA19BD /* Matchers */,
 				A3057537151FFEC500DA19BD /* Criteria */,
 				A305750C151FF49F00DA19BD /* Selectors */,
 				A30574CD151FE15F00DA19BD /* AKAutomaton.h */,
 				A30574CF151FE1E200DA19BD /* AKNativeAutomaton.h */,
 				A30574D0151FE1E200DA19BD /* AKNativeAutomaton.m */,
+				A305758D1520E53000DA19BD /* AKPollingProber.h */,
+				A305758E1520E53100DA19BD /* AKPollingProber.m */,
 				A30575861520E07E00DA19BD /* AKProbe.h */,
+				A305758C1520E50E00DA19BD /* AKProber.h */,
 				A3057527151FFB0500DA19BD /* AKViewCriteria.h */,
 				A305750B151FF38A00DA19BD /* AKViewSelector.h */,
 				A3057535151FFC2100DA19BD /* AKViewFinder.h */,
@@ -243,6 +266,7 @@
 		A30574D7151FE6F900DA19BD /* Unit */ = {
 			isa = PBXGroup;
 			children = (
+				A305759C1520ED4500DA19BD /* AKViewAssertionProbeTest.m */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -253,6 +277,7 @@
 				A30575401520002400DA19BD /* AKKeyValueCriteriaTest.m */,
 				A305752C151FFB7300DA19BD /* AKRecursiveViewFinderTest.m */,
 				A3057529151FFB4D00DA19BD /* AKTaggedViewFinderTest.m */,
+				A30575921520E72400DA19BD /* AKPollingProbeTest.m */,
 			);
 			path = Integration;
 			sourceTree = "<group>";
@@ -283,6 +308,8 @@
 				A3057539151FFED500DA19BD /* AKAnyView.m */,
 				A305753C151FFFCF00DA19BD /* AKKeyValueCriteria.h */,
 				A305753D151FFFCF00DA19BD /* AKKeyValueCriteria.m */,
+				A30575A01520F0C800DA19BD /* AKViewCriteriaWithBlock.h */,
+				A30575A11520F0C800DA19BD /* AKViewCriteriaWithBlock.m */,
 			);
 			name = Criteria;
 			sourceTree = "<group>";
@@ -294,6 +321,15 @@
 				A305757B1520D51200DA19BD /* AKViewMatcher+beVisible.m */,
 			);
 			name = Matchers;
+			sourceTree = "<group>";
+		};
+		A30575961520EBC400DA19BD /* Probes */ = {
+			isa = PBXGroup;
+			children = (
+				A30575971520EBD200DA19BD /* AKViewAssertionProbe.h */,
+				A30575981520EBD200DA19BD /* AKViewAssertionProbe.m */,
+			);
+			name = Probes;
 			sourceTree = "<group>";
 		};
 		A3849DE2151FCBA0009289A5 = {
@@ -428,6 +464,9 @@
 				A305757C1520D51200DA19BD /* AKViewMatcher+beVisible.h in Headers */,
 				A30575871520E07E00DA19BD /* AKProbe.h in Headers */,
 				A305758A1520E35D00DA19BD /* AKSingleViewFinder.h in Headers */,
+				A305758F1520E53100DA19BD /* AKPollingProber.h in Headers */,
+				A30575991520EBD200DA19BD /* AKViewAssertionProbe.h in Headers */,
+				A30575A21520F0C800DA19BD /* AKViewCriteriaWithBlock.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +671,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A305759E1520ED4C00DA19BD /* AKViewAssertionProbeTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +702,9 @@
 				A305754E1520049800DA19BD /* AKAllOfCriteria.m in Sources */,
 				A305757D1520D51200DA19BD /* AKViewMatcher+beVisible.m in Sources */,
 				A305758B1520E35D00DA19BD /* AKSingleViewFinder.m in Sources */,
+				A30575901520E53100DA19BD /* AKPollingProber.m in Sources */,
+				A305759A1520EBD200DA19BD /* AKViewAssertionProbe.m in Sources */,
+				A30575A31520F0C800DA19BD /* AKViewCriteriaWithBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,6 +716,7 @@
 				A305752B151FFB5300DA19BD /* AKTaggedViewFinderTest.m in Sources */,
 				A305752D151FFB7300DA19BD /* AKRecursiveViewFinderTest.m in Sources */,
 				A30575421520004B00DA19BD /* AKKeyValueCriteriaTest.m in Sources */,
+				A30575951520E74500DA19BD /* AKPollingProbeTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

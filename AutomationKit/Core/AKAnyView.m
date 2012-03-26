@@ -15,6 +15,11 @@
   return YES;
 }
 
+- (NSString *)failureDescription
+{
+  return nil; // this can never fail
+}
+
 @end
 
 id<AKViewCriteria> AK_anyView(void)

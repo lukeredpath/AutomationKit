@@ -11,5 +11,6 @@
 @protocol AKViewCriteria <NSObject>
 
 - (BOOL)isSatisfiedByView:(UIView *)view;
+- (NSString *)failureDescription;
 
 @end

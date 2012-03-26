@@ -47,4 +47,9 @@
   return (_mainWindow != nil);
 }
 
+- (NSString *)failureDescription
+{
+  return @"Couldn't find application window";
+}
+
 @end

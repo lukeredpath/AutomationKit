@@ -12,5 +12,6 @@
 
 - (void)probe;
 - (BOOL)isSatisfied;
+- (NSString *)failureDescription;
 
 @end
