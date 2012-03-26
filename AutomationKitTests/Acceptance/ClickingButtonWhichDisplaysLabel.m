@@ -10,6 +10,7 @@
 #import "LRAppDelegate.h"
 #import "AKButtonDriver.h"
 #import "AKLabelDriver.h"
+#import "AKViewMatcher+beVisible.h"
 
 LRAppDelegate *getAppDelegate() {
   return [[UIApplication sharedApplication] delegate];
@@ -38,7 +39,7 @@ describe(@"Given a button that displays a label when clicked", ^{
     
     [theButton tap];
 
-    expect([theLabel isVisible]).isGoing.toBeTruthy();
+    expect(theLabel).will.beVisible();
   });
   
   specify(@"we can click on the button and assert the label is visible using property queries", ^{    
@@ -47,7 +48,7 @@ describe(@"Given a button that displays a label when clicked", ^{
 
     [theButton tap];
     
-    expect([theLabel isVisible]).isGoing.toBeTruthy();
+    expect(theLabel).will.beVisible();
   });
   
 });

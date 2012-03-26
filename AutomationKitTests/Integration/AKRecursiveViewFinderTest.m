@@ -40,7 +40,7 @@ describe(@"AKRecursiveViewFinder", ^{
   });
   
   it(@"finds all subviews of a view matching criteria", ^{
-    AKRecursiveViewFinder *finder = [[AKRecursiveViewFinder alloc] initWithCriteria:anyView parentViewSelector:parentViewSelector];
+    AKRecursiveViewFinder *finder = [[AKRecursiveViewFinder alloc] initWithCriteria:AK_anyView() parentViewSelector:parentViewSelector];
     
     UIView *childViewOne = [[UIView alloc] init];
     [parentView addSubview:childViewOne];
@@ -50,12 +50,12 @@ describe(@"AKRecursiveViewFinder", ^{
     
     NSArray *result = [finder views];
     
-    expect(result).toContain(childViewOne);
-    expect(result).toContain(childViewTwo);
+    expect(result).to.contain(childViewOne);
+    expect(result).to.contain(childViewTwo);
   });
   
   it(@"finds all subviews of a view matching criteria recursively", ^{
-    AKRecursiveViewFinder *finder = [[AKRecursiveViewFinder alloc] initWithCriteria:anyView parentViewSelector:parentViewSelector];
+    AKRecursiveViewFinder *finder = [[AKRecursiveViewFinder alloc] initWithCriteria:AK_anyView() parentViewSelector:parentViewSelector];
     
     UIView *childView = [[UIView alloc] init];
     [parentView addSubview:childView];
@@ -65,8 +65,8 @@ describe(@"AKRecursiveViewFinder", ^{
     
     NSArray *result = [finder views];
     
-    expect(result).toContain(childView);
-    expect(result).toContain(subChildView);
+    expect(result).to.contain(childView);
+    expect(result).to.contain(subChildView);
   });
   
   it(@"ignores views that do not match the given criteria", ^{
@@ -77,7 +77,7 @@ describe(@"AKRecursiveViewFinder", ^{
     
     NSArray *result = [finder views];
     
-    expect(result).Not.toContain(childView);
+    expect(result).willNot.contain(childView);
 	});
   
 });

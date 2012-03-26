@@ -29,13 +29,13 @@ describe(@"AKTaggedViewFinder",  ^{
     [childView setTag:123];
     [parentView addSubview:childView];
     
-    expect([taggedViewFinder view]).toEqual(childView);
+    expect([taggedViewFinder view]).to.equal(childView);
   });
   
   specify(@"returns nil if a view with the given tag doesn't exists", ^{
     AKTaggedViewFinder *taggedViewFinder = [[AKTaggedViewFinder alloc] initWithTag:123 parentViewSelector:parentViewSelector];
     
-    expect([taggedViewFinder view]).toBeNil();
+    expect([taggedViewFinder view]).to.beNil();
   });
 });
 

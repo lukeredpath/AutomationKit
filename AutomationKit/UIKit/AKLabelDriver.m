@@ -13,6 +13,7 @@
 #import "AKKeyValueCriteria.h"
 #import "AKTypeOfView.h"
 #import "AKAllOfCriteria.h"
+#import "EXPMatcher.h"
 
 
 @implementation AKLabelDriver {
@@ -56,3 +57,4 @@
 }
 
 @end
+

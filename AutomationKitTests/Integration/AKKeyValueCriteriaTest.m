@@ -24,7 +24,7 @@ describe(@"AKKeyValueCriteria", ^{
     
     label.text = @"Hello World";
 
-    expect([criteria isSatisfiedByView:label]).toBeTruthy();
+    expect([criteria isSatisfiedByView:label]).to.beTruthy();
 	});
   
   it(@"is not satisfied by views that do not have the given value for a key", ^{
@@ -32,7 +32,7 @@ describe(@"AKKeyValueCriteria", ^{
     
     label.text = @"Goodbye World";
     
-    expect([criteria isSatisfiedByView:label]).toBeFalsy();
+    expect([criteria isSatisfiedByView:label]).to.beFalsy();
 	});
   
 });

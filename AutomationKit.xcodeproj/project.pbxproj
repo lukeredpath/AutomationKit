@@ -47,6 +47,8 @@
 		A305754A152003B500DA19BD /* AKTypeOfView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3057548152003B500DA19BD /* AKTypeOfView.m */; };
 		A305754D1520049800DA19BD /* AKAllOfCriteria.h in Headers */ = {isa = PBXBuildFile; fileRef = A305754B1520049800DA19BD /* AKAllOfCriteria.h */; };
 		A305754E1520049800DA19BD /* AKAllOfCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = A305754C1520049800DA19BD /* AKAllOfCriteria.m */; };
+		A305757C1520D51200DA19BD /* AKViewMatcher+beVisible.h in Headers */ = {isa = PBXBuildFile; fileRef = A305757A1520D51200DA19BD /* AKViewMatcher+beVisible.h */; };
+		A305757D1520D51200DA19BD /* AKViewMatcher+beVisible.m in Sources */ = {isa = PBXBuildFile; fileRef = A305757B1520D51200DA19BD /* AKViewMatcher+beVisible.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A3849DF2151FCBA0009289A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
 		A3849DF4151FCBA0009289A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF3151FCBA0009289A5 /* Foundation.framework */; };
 		A3849DF6151FCBA0009289A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */; };
@@ -118,6 +120,8 @@
 		A3057548152003B500DA19BD /* AKTypeOfView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTypeOfView.m; sourceTree = "<group>"; };
 		A305754B1520049800DA19BD /* AKAllOfCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAllOfCriteria.h; sourceTree = "<group>"; };
 		A305754C1520049800DA19BD /* AKAllOfCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAllOfCriteria.m; sourceTree = "<group>"; };
+		A305757A1520D51200DA19BD /* AKViewMatcher+beVisible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKViewMatcher+beVisible.h"; sourceTree = "<group>"; };
+		A305757B1520D51200DA19BD /* AKViewMatcher+beVisible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AKViewMatcher+beVisible.m"; sourceTree = "<group>"; };
 		A3849DED151FCBA0009289A5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3849DF1151FCBA0009289A5 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A3849DF3151FCBA0009289A5 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -208,6 +212,7 @@
 		A30574B3151FD62C00DA19BD /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A30575791520D4C800DA19BD /* Matchers */,
 				A3057537151FFEC500DA19BD /* Criteria */,
 				A305750C151FF49F00DA19BD /* Selectors */,
 				A30574CD151FE15F00DA19BD /* AKAutomaton.h */,
@@ -277,6 +282,15 @@
 				A3057548152003B500DA19BD /* AKTypeOfView.m */,
 			);
 			name = Criteria;
+			sourceTree = "<group>";
+		};
+		A30575791520D4C800DA19BD /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				A305757A1520D51200DA19BD /* AKViewMatcher+beVisible.h */,
+				A305757B1520D51200DA19BD /* AKViewMatcher+beVisible.m */,
+			);
+			name = Matchers;
 			sourceTree = "<group>";
 		};
 		A3849DE2151FCBA0009289A5 = {
@@ -409,6 +423,7 @@
 				A305753E151FFFCF00DA19BD /* AKKeyValueCriteria.h in Headers */,
 				A3057549152003B500DA19BD /* AKTypeOfView.h in Headers */,
 				A305754D1520049800DA19BD /* AKAllOfCriteria.h in Headers */,
+				A305757C1520D51200DA19BD /* AKViewMatcher+beVisible.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +657,7 @@
 				A305753F151FFFCF00DA19BD /* AKKeyValueCriteria.m in Sources */,
 				A305754A152003B500DA19BD /* AKTypeOfView.m in Sources */,
 				A305754E1520049800DA19BD /* AKAllOfCriteria.m in Sources */,
+				A305757D1520D51200DA19BD /* AKViewMatcher+beVisible.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,7 +825,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutomationKit/AutomationKit-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "\"$(PODS_ROOT)/Headers/Expecta\"";
 				OTHER_LDFLAGS = "-ObjC";
+				PODS_ROOT = "$(SRCROOT)/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -822,7 +840,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutomationKit/AutomationKit-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "\"$(PODS_ROOT)/Headers/Expecta\"";
 				OTHER_LDFLAGS = "-ObjC";
+				PODS_ROOT = "$(SRCROOT)/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -842,6 +862,18 @@
 				GCC_PREFIX_HEADER = "AutomationKit/AutomationKit-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "AutomationKitTests/AutomationKitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-framework",
+					Foundation,
+					"-ObjC",
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-DAK_EXPECTA_SUPPORT",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -863,6 +895,18 @@
 				GCC_PREFIX_HEADER = "AutomationKit/AutomationKit-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "AutomationKitTests/AutomationKitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-framework",
+					Foundation,
+					"-ObjC",
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-DAK_EXPECTA_SUPPORT",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";

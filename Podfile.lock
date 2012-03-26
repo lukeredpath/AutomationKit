@@ -4,6 +4,6 @@ PODS:
   - Specta (0.1.4)
 
 DEPENDENCIES:
-  - Expecta
+  - Expecta (from `git://github.com/lukeredpath/expecta')
   - LRMocky (from `git://github.com/lukeredpath/LRMocky')
   - Specta
