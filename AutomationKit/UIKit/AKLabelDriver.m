@@ -7,9 +7,12 @@
 //
 
 #import "AKLabelDriver.h"
-#import "AKViewLocator.h"
 #import "AKReferencedViewSelector.h"
 #import "AKTaggedViewFinder.h"
+#import "AKRecursiveViewFinder.h"
+#import "AKKeyValueCriteria.h"
+#import "AKTypeOfView.h"
+#import "AKAllOfCriteria.h"
 
 
 @implementation AKLabelDriver {
@@ -44,7 +47,12 @@
 
 + (id)inWindow:(UIWindow *)window withText:(NSString *)text
 {
-  return nil;
+  id<AKViewCriteria> criteria = [[AKAllOfCriteria alloc] initWithCriteria:AK_isTypeOfView([UILabel class]), AK_hasValueForKey(text, @"text"), nil];
+  
+  id<AKViewSelector> mainWindowSelector = [AKReferencedViewSelector selectorForView:window];
+  id<AKViewSelector> labelViewSelector = [[AKRecursiveViewFinder alloc] initWithCriteria:criteria parentViewSelector:mainWindowSelector];
+  
+  return [[self alloc] initWithViewSelector:labelViewSelector];
 }
 
 @end

@@ -10,6 +10,10 @@
 #import "AKNativeAutomaton.h"
 #import "AKReferencedViewSelector.h"
 #import "AKTaggedViewFinder.h"
+#import "AKTypeOfView.h"
+#import "AKAllOfCriteria.h"
+#import "AKKeyValueCriteria.h"
+#import "AKRecursiveViewFinder.h"
 
 
 @implementation AKButtonDriver {
@@ -45,13 +49,20 @@
 {
   id<AKViewSelector> mainWindowSelector = [AKReferencedViewSelector selectorForView:window];
   id<AKViewSelector> taggedViewSelector = [[AKTaggedViewFinder alloc] initWithTag:tag parentViewSelector:mainWindowSelector];
-
+  
   return [[self alloc] initWithViewSelector:taggedViewSelector automaton:[self defaultAutomaton]];
 }
 
 + (id)inWindow:(UIWindow *)window withTitle:(NSString *)title
 {
-  return nil; 
+  id<AKViewCriteria> criteria = [[AKAllOfCriteria alloc] initWithCriteria:
+      AK_isTypeOfView([UIButton class]), 
+      AK_hasValueForKey(title, @"currentTitle"), nil];
+  
+  id<AKViewSelector> mainWindowSelector = [AKReferencedViewSelector selectorForView:window];
+  id<AKViewSelector> buttonViewSelector = [[AKRecursiveViewFinder alloc] initWithCriteria:criteria parentViewSelector:mainWindowSelector];
+  
+  return [[self alloc] initWithViewSelector:buttonViewSelector automaton:[self defaultAutomaton]];
 }
 
 @end

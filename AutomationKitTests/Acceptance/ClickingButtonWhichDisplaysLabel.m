@@ -11,8 +11,12 @@
 #import "AKButtonDriver.h"
 #import "AKLabelDriver.h"
 
+LRAppDelegate *getAppDelegate() {
+  return [[UIApplication sharedApplication] delegate];
+}
+
 UIWindow *getMainWindow() {
-  return [[[UIApplication sharedApplication] delegate] window];
+  return [getAppDelegate() window];
 }
 
 SpecBegin(ClickingButtonWhichDisplaysLabel)
@@ -25,9 +29,10 @@ describe(@"Given a button that displays a label when clicked", ^{
   
   beforeEach(^{
     window = getMainWindow();
+    getAppDelegate().theLabel.hidden = YES;
   });
   
-  specify(@"we can click on the button and assert the label is visible using view tags", ^{    
+  specify(@"we can click on the button and assert the label is visible using view tags", ^{
     theButton = [AKButtonDriver inWindow:window withTag:AppDelegateView.CLICK_ME_BUTTON];
     theLabel = [AKLabelDriver inWindow:window withTag:AppDelegateView.CLICK_ME_LABEL];
     
@@ -36,10 +41,10 @@ describe(@"Given a button that displays a label when clicked", ^{
     expect([theLabel isVisible]).isGoing.toBeTruthy();
   });
   
-  specify(@"we can click on the button and assert the label is visible using property queries", ^{
-    theButton = [AKButtonDriver inWindow:window withTitle:@"Click Me"];
+  specify(@"we can click on the button and assert the label is visible using property queries", ^{    
+    theButton = [AKButtonDriver inWindow:window withTitle:@"CLICK ME"];
     theLabel = [AKLabelDriver inWindow:window withText:@"You Clicked Me"];
-    
+
     [theButton tap];
     
     expect([theLabel isVisible]).isGoing.toBeTruthy();

@@ -21,14 +21,11 @@
 		A30574CE151FE15F00DA19BD /* AKAutomaton.h in Headers */ = {isa = PBXBuildFile; fileRef = A30574CD151FE15F00DA19BD /* AKAutomaton.h */; };
 		A30574D1151FE1E200DA19BD /* AKNativeAutomaton.h in Headers */ = {isa = PBXBuildFile; fileRef = A30574CF151FE1E200DA19BD /* AKNativeAutomaton.h */; };
 		A30574D2151FE1E200DA19BD /* AKNativeAutomaton.m in Sources */ = {isa = PBXBuildFile; fileRef = A30574D0151FE1E200DA19BD /* AKNativeAutomaton.m */; };
-		A30574D5151FE54900DA19BD /* AKViewLocator.h in Headers */ = {isa = PBXBuildFile; fileRef = A30574D3151FE54900DA19BD /* AKViewLocator.h */; };
-		A30574D6151FE54900DA19BD /* AKViewLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = A30574D4151FE54900DA19BD /* AKViewLocator.m */; };
 		A30574F6151FE75C00DA19BD /* libPods-tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849E39151FCCCF009289A5 /* libPods-tests.a */; };
 		A30574F7151FE75C00DA19BD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849E1A151FCBCF009289A5 /* SenTestingKit.framework */; };
 		A30574F9151FE75C00DA19BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF3151FCBA0009289A5 /* Foundation.framework */; };
 		A30574FA151FE75C00DA19BD /* libAutomationKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849E0C151FCBCF009289A5 /* libAutomationKit.a */; };
 		A30574FC151FE75C00DA19BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3849E24151FCBCF009289A5 /* InfoPlist.strings */; };
-		A3057509151FE9D200DA19BD /* AKViewLocatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A30574D8151FE72800DA19BD /* AKViewLocatorTest.m */; };
 		A305750A151FE9F800DA19BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */; };
 		A305750F151FF4B600DA19BD /* AKMainWindowFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = A305750D151FF4B600DA19BD /* AKMainWindowFinder.h */; };
 		A3057510151FF4B600DA19BD /* AKMainWindowFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A305750E151FF4B600DA19BD /* AKMainWindowFinder.m */; };
@@ -36,6 +33,22 @@
 		A3057514151FF55700DA19BD /* AKTaggedViewFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A3057512151FF55700DA19BD /* AKTaggedViewFinder.m */; };
 		A3057517151FF63700DA19BD /* AKReferencedViewSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = A3057515151FF63700DA19BD /* AKReferencedViewSelector.h */; };
 		A3057518151FF63700DA19BD /* AKReferencedViewSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = A3057516151FF63700DA19BD /* AKReferencedViewSelector.m */; };
+		A3057524151FFA9200DA19BD /* AKRecursiveViewFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = A3057522151FFA9200DA19BD /* AKRecursiveViewFinder.h */; };
+		A3057525151FFA9200DA19BD /* AKRecursiveViewFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A3057523151FFA9200DA19BD /* AKRecursiveViewFinder.m */; };
+		A3057528151FFB0500DA19BD /* AKViewCriteria.h in Headers */ = {isa = PBXBuildFile; fileRef = A3057527151FFB0500DA19BD /* AKViewCriteria.h */; };
+		A305752B151FFB5300DA19BD /* AKTaggedViewFinderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A3057529151FFB4D00DA19BD /* AKTaggedViewFinderTest.m */; };
+		A305752D151FFB7300DA19BD /* AKRecursiveViewFinderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A305752C151FFB7300DA19BD /* AKRecursiveViewFinderTest.m */; };
+		A305753A151FFED500DA19BD /* AKAnyView.h in Headers */ = {isa = PBXBuildFile; fileRef = A3057538151FFED500DA19BD /* AKAnyView.h */; };
+		A305753B151FFED500DA19BD /* AKAnyView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3057539151FFED500DA19BD /* AKAnyView.m */; };
+		A305753E151FFFCF00DA19BD /* AKKeyValueCriteria.h in Headers */ = {isa = PBXBuildFile; fileRef = A305753C151FFFCF00DA19BD /* AKKeyValueCriteria.h */; };
+		A305753F151FFFCF00DA19BD /* AKKeyValueCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = A305753D151FFFCF00DA19BD /* AKKeyValueCriteria.m */; };
+		A30575421520004B00DA19BD /* AKKeyValueCriteriaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575401520002400DA19BD /* AKKeyValueCriteriaTest.m */; };
+		A30575451520021600DA19BD /* AKSingleViewFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = A30575431520021500DA19BD /* AKSingleViewFinder.h */; };
+		A30575461520021600DA19BD /* AKSingleViewFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575441520021600DA19BD /* AKSingleViewFinder.m */; };
+		A3057549152003B500DA19BD /* AKTypeOfView.h in Headers */ = {isa = PBXBuildFile; fileRef = A3057547152003B500DA19BD /* AKTypeOfView.h */; };
+		A305754A152003B500DA19BD /* AKTypeOfView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3057548152003B500DA19BD /* AKTypeOfView.m */; };
+		A305754D1520049800DA19BD /* AKAllOfCriteria.h in Headers */ = {isa = PBXBuildFile; fileRef = A305754B1520049800DA19BD /* AKAllOfCriteria.h */; };
+		A305754E1520049800DA19BD /* AKAllOfCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = A305754C1520049800DA19BD /* AKAllOfCriteria.m */; };
 		A3849DF2151FCBA0009289A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
 		A3849DF4151FCBA0009289A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF3151FCBA0009289A5 /* Foundation.framework */; };
 		A3849DF6151FCBA0009289A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */; };
@@ -83,9 +96,6 @@
 		A30574CD151FE15F00DA19BD /* AKAutomaton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAutomaton.h; sourceTree = "<group>"; };
 		A30574CF151FE1E200DA19BD /* AKNativeAutomaton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKNativeAutomaton.h; path = ../UIKit/AKNativeAutomaton.h; sourceTree = "<group>"; };
 		A30574D0151FE1E200DA19BD /* AKNativeAutomaton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKNativeAutomaton.m; path = ../UIKit/AKNativeAutomaton.m; sourceTree = "<group>"; };
-		A30574D3151FE54900DA19BD /* AKViewLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKViewLocator.h; sourceTree = "<group>"; };
-		A30574D4151FE54900DA19BD /* AKViewLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKViewLocator.m; sourceTree = "<group>"; };
-		A30574D8151FE72800DA19BD /* AKViewLocatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKViewLocatorTest.m; path = Unit/AKViewLocatorTest.m; sourceTree = "<group>"; };
 		A3057502151FE75C00DA19BD /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3057505151FE7CB00DA19BD /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
 		A305750B151FF38A00DA19BD /* AKViewSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKViewSelector.h; sourceTree = "<group>"; };
@@ -95,6 +105,23 @@
 		A3057512151FF55700DA19BD /* AKTaggedViewFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTaggedViewFinder.m; sourceTree = "<group>"; };
 		A3057515151FF63700DA19BD /* AKReferencedViewSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKReferencedViewSelector.h; sourceTree = "<group>"; };
 		A3057516151FF63700DA19BD /* AKReferencedViewSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKReferencedViewSelector.m; sourceTree = "<group>"; };
+		A3057522151FFA9200DA19BD /* AKRecursiveViewFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKRecursiveViewFinder.h; sourceTree = "<group>"; };
+		A3057523151FFA9200DA19BD /* AKRecursiveViewFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKRecursiveViewFinder.m; sourceTree = "<group>"; };
+		A3057527151FFB0500DA19BD /* AKViewCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKViewCriteria.h; sourceTree = "<group>"; };
+		A3057529151FFB4D00DA19BD /* AKTaggedViewFinderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTaggedViewFinderTest.m; sourceTree = "<group>"; };
+		A305752C151FFB7300DA19BD /* AKRecursiveViewFinderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKRecursiveViewFinderTest.m; sourceTree = "<group>"; };
+		A3057535151FFC2100DA19BD /* AKViewFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKViewFinder.h; sourceTree = "<group>"; };
+		A3057538151FFED500DA19BD /* AKAnyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAnyView.h; sourceTree = "<group>"; };
+		A3057539151FFED500DA19BD /* AKAnyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAnyView.m; sourceTree = "<group>"; };
+		A305753C151FFFCF00DA19BD /* AKKeyValueCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKKeyValueCriteria.h; sourceTree = "<group>"; };
+		A305753D151FFFCF00DA19BD /* AKKeyValueCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKKeyValueCriteria.m; sourceTree = "<group>"; };
+		A30575401520002400DA19BD /* AKKeyValueCriteriaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKKeyValueCriteriaTest.m; sourceTree = "<group>"; };
+		A30575431520021500DA19BD /* AKSingleViewFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSingleViewFinder.h; sourceTree = "<group>"; };
+		A30575441520021600DA19BD /* AKSingleViewFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSingleViewFinder.m; sourceTree = "<group>"; };
+		A3057547152003B500DA19BD /* AKTypeOfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTypeOfView.h; sourceTree = "<group>"; };
+		A3057548152003B500DA19BD /* AKTypeOfView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTypeOfView.m; sourceTree = "<group>"; };
+		A305754B1520049800DA19BD /* AKAllOfCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAllOfCriteria.h; sourceTree = "<group>"; };
+		A305754C1520049800DA19BD /* AKAllOfCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAllOfCriteria.m; sourceTree = "<group>"; };
 		A3849DED151FCBA0009289A5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3849DF1151FCBA0009289A5 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A3849DF3151FCBA0009289A5 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -185,13 +212,14 @@
 		A30574B3151FD62C00DA19BD /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A3057537151FFEC500DA19BD /* Criteria */,
 				A305750C151FF49F00DA19BD /* Selectors */,
 				A30574CD151FE15F00DA19BD /* AKAutomaton.h */,
 				A30574CF151FE1E200DA19BD /* AKNativeAutomaton.h */,
 				A30574D0151FE1E200DA19BD /* AKNativeAutomaton.m */,
+				A3057527151FFB0500DA19BD /* AKViewCriteria.h */,
 				A305750B151FF38A00DA19BD /* AKViewSelector.h */,
-				A30574D3151FE54900DA19BD /* AKViewLocator.h */,
-				A30574D4151FE54900DA19BD /* AKViewLocator.m */,
+				A3057535151FFC2100DA19BD /* AKViewFinder.h */,
 				A30574B4151FD66B00DA19BD /* Additions */,
 			);
 			path = Core;
@@ -218,9 +246,11 @@
 		A3057508151FE9C800DA19BD /* Integration */ = {
 			isa = PBXGroup;
 			children = (
-				A30574D8151FE72800DA19BD /* AKViewLocatorTest.m */,
+				A30575401520002400DA19BD /* AKKeyValueCriteriaTest.m */,
+				A305752C151FFB7300DA19BD /* AKRecursiveViewFinderTest.m */,
+				A3057529151FFB4D00DA19BD /* AKTaggedViewFinderTest.m */,
 			);
-			name = Integration;
+			path = Integration;
 			sourceTree = "<group>";
 		};
 		A305750C151FF49F00DA19BD /* Selectors */ = {
@@ -230,10 +260,29 @@
 				A3057516151FF63700DA19BD /* AKReferencedViewSelector.m */,
 				A3057511151FF55700DA19BD /* AKTaggedViewFinder.h */,
 				A3057512151FF55700DA19BD /* AKTaggedViewFinder.m */,
+				A3057522151FFA9200DA19BD /* AKRecursiveViewFinder.h */,
+				A3057523151FFA9200DA19BD /* AKRecursiveViewFinder.m */,
+				A30575431520021500DA19BD /* AKSingleViewFinder.h */,
+				A30575441520021600DA19BD /* AKSingleViewFinder.m */,
 				A305750D151FF4B600DA19BD /* AKMainWindowFinder.h */,
 				A305750E151FF4B600DA19BD /* AKMainWindowFinder.m */,
 			);
 			name = Selectors;
+			sourceTree = "<group>";
+		};
+		A3057537151FFEC500DA19BD /* Criteria */ = {
+			isa = PBXGroup;
+			children = (
+				A305754B1520049800DA19BD /* AKAllOfCriteria.h */,
+				A305754C1520049800DA19BD /* AKAllOfCriteria.m */,
+				A3057538151FFED500DA19BD /* AKAnyView.h */,
+				A3057539151FFED500DA19BD /* AKAnyView.m */,
+				A305753C151FFFCF00DA19BD /* AKKeyValueCriteria.h */,
+				A305753D151FFFCF00DA19BD /* AKKeyValueCriteria.m */,
+				A3057547152003B500DA19BD /* AKTypeOfView.h */,
+				A3057548152003B500DA19BD /* AKTypeOfView.m */,
+			);
+			name = Criteria;
 			sourceTree = "<group>";
 		};
 		A3849DE2151FCBA0009289A5 = {
@@ -357,10 +406,16 @@
 				A30574CB151FD7A600DA19BD /* UIEvent+Synthesis.h in Headers */,
 				A30574CE151FE15F00DA19BD /* AKAutomaton.h in Headers */,
 				A30574D1151FE1E200DA19BD /* AKNativeAutomaton.h in Headers */,
-				A30574D5151FE54900DA19BD /* AKViewLocator.h in Headers */,
 				A305750F151FF4B600DA19BD /* AKMainWindowFinder.h in Headers */,
 				A3057513151FF55700DA19BD /* AKTaggedViewFinder.h in Headers */,
 				A3057517151FF63700DA19BD /* AKReferencedViewSelector.h in Headers */,
+				A3057524151FFA9200DA19BD /* AKRecursiveViewFinder.h in Headers */,
+				A3057528151FFB0500DA19BD /* AKViewCriteria.h in Headers */,
+				A305753A151FFED500DA19BD /* AKAnyView.h in Headers */,
+				A305753E151FFFCF00DA19BD /* AKKeyValueCriteria.h in Headers */,
+				A30575451520021600DA19BD /* AKSingleViewFinder.h in Headers */,
+				A3057549152003B500DA19BD /* AKTypeOfView.h in Headers */,
+				A305754D1520049800DA19BD /* AKAllOfCriteria.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,10 +641,15 @@
 				A30574C2151FD6CA00DA19BD /* UITouch+Synthesis.m in Sources */,
 				A30574CC151FD7A600DA19BD /* UIEvent+Synthesis.m in Sources */,
 				A30574D2151FE1E200DA19BD /* AKNativeAutomaton.m in Sources */,
-				A30574D6151FE54900DA19BD /* AKViewLocator.m in Sources */,
 				A3057510151FF4B600DA19BD /* AKMainWindowFinder.m in Sources */,
 				A3057514151FF55700DA19BD /* AKTaggedViewFinder.m in Sources */,
 				A3057518151FF63700DA19BD /* AKReferencedViewSelector.m in Sources */,
+				A3057525151FFA9200DA19BD /* AKRecursiveViewFinder.m in Sources */,
+				A305753B151FFED500DA19BD /* AKAnyView.m in Sources */,
+				A305753F151FFFCF00DA19BD /* AKKeyValueCriteria.m in Sources */,
+				A30575461520021600DA19BD /* AKSingleViewFinder.m in Sources */,
+				A305754A152003B500DA19BD /* AKTypeOfView.m in Sources */,
+				A305754E1520049800DA19BD /* AKAllOfCriteria.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,7 +658,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3057497151FCDE200DA19BD /* ClickingButtonWhichDisplaysLabel.m in Sources */,
-				A3057509151FE9D200DA19BD /* AKViewLocatorTest.m in Sources */,
+				A305752B151FFB5300DA19BD /* AKTaggedViewFinderTest.m in Sources */,
+				A305752D151FFB7300DA19BD /* AKRecursiveViewFinderTest.m in Sources */,
+				A30575421520004B00DA19BD /* AKKeyValueCriteriaTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

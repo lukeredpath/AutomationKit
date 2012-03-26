@@ -14,4 +14,6 @@
 #define EXP_SHORTHAND
 #import "Expecta.h"
 
+#define AK_SHORTHAND
+
 #endif
