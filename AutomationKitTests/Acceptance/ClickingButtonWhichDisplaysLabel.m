@@ -39,7 +39,7 @@ describe(@"Given a button that displays a label when clicked", ^{
     
     [theButton tap];
 
-    expect(theLabel).will.beVisible();
+    expect(theLabel).to.beVisible();
   });
   
   specify(@"we can click on the button and assert the label is visible using property queries", ^{    
@@ -48,7 +48,7 @@ describe(@"Given a button that displays a label when clicked", ^{
 
     [theButton tap];
     
-    expect(theLabel).will.beVisible();
+    expect(theLabel).to.beVisible();
   });
   
 });
