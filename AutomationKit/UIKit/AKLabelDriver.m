@@ -34,8 +34,7 @@
 - (BOOL)isVisible
 {
   return [self assertView:^(UIView *view) {
-    return (BOOL)(![view isHidden]);
-  } onFailure:@"expected to be visible"];
+    return (BOOL)(![view isHidden]); } onFailure:@"expected to be visible"];
 }
 
 - (BOOL)assertView:(AKViewCriteriaWithBlockBlock)block onFailure:(NSString *)failureDescription

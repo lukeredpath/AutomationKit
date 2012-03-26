@@ -23,7 +23,14 @@ const struct AppDelegateViewStruct AppDelegateView = {
 {
   self.theLabel.hidden = YES;
   self.theLabel.tag = AppDelegateView.CLICK_ME_LABEL;
+  self.theButton.hidden = YES;
   self.theButton.tag = AppDelegateView.CLICK_ME_BUTTON;
+  
+  double delayInSeconds = 1;
+  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+    self.theButton.hidden = NO;
+  });
 
   [self.window makeKeyAndVisible];
   
