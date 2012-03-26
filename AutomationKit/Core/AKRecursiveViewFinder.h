@@ -13,6 +13,10 @@
 
 @interface AKRecursiveViewFinder : NSObject <AKViewFinder, AKViewSelector>
 
+- (id)initWithViewType:(Class)type
+              criteria:(id<AKViewCriteria>)criteria 
+    parentViewSelector:(id<AKViewSelector>)parentViewSelector;
+
 - (id)initWithCriteria:(id<AKViewCriteria>)criteria 
     parentViewSelector:(id<AKViewSelector>)parentViewSelector;
 

@@ -10,8 +10,6 @@
 #import "AKNativeAutomaton.h"
 #import "AKReferencedViewSelector.h"
 #import "AKTaggedViewFinder.h"
-#import "AKTypeOfView.h"
-#import "AKAllOfCriteria.h"
 #import "AKKeyValueCriteria.h"
 #import "AKRecursiveViewFinder.h"
 
@@ -55,12 +53,10 @@
 
 + (id)inWindow:(UIWindow *)window withTitle:(NSString *)title
 {
-  id<AKViewCriteria> criteria = [[AKAllOfCriteria alloc] initWithCriteria:
-      AK_isTypeOfView([UIButton class]), 
-      AK_hasValueForKey(title, @"currentTitle"), nil];
-  
   id<AKViewSelector> mainWindowSelector = [AKReferencedViewSelector selectorForView:window];
-  id<AKViewSelector> buttonViewSelector = [[AKRecursiveViewFinder alloc] initWithCriteria:criteria parentViewSelector:mainWindowSelector];
+  id<AKViewSelector> buttonViewSelector = [[AKRecursiveViewFinder alloc] initWithViewType:[UILabel class] 
+                                                                                 criteria:AK_hasValueForKey(title, @"currentTitle")
+                                                                       parentViewSelector:mainWindowSelector];
   
   return [[self alloc] initWithViewSelector:buttonViewSelector automaton:[self defaultAutomaton]];
 }

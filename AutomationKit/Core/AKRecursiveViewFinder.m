@@ -9,20 +9,29 @@
 #import "AKRecursiveViewFinder.h"
 
 @implementation AKRecursiveViewFinder {
+  Class _viewType;
   id<AKViewCriteria> _criteria;
   id<AKViewSelector> _parentViewSelector;
   NSMutableArray *_foundViews;
 }
 
-- (id)initWithCriteria:(id<AKViewCriteria>)criteria 
+- (id)initWithViewType:(Class)type
+              criteria:(id<AKViewCriteria>)criteria 
     parentViewSelector:(id<AKViewSelector>)parentViewSelector
 {
   if ((self = [super init])) {
+    _viewType = type;
     _criteria = criteria;
     _parentViewSelector = parentViewSelector;
     _foundViews = [[NSMutableArray alloc] init];
   }
   return self;
+}
+
+- (id)initWithCriteria:(id<AKViewCriteria>)criteria 
+    parentViewSelector:(id<AKViewSelector>)parentViewSelector
+{
+  return [self initWithViewType:[UIView class] criteria:criteria parentViewSelector:parentViewSelector];
 }
 
 - (NSArray *)views
@@ -50,7 +59,7 @@
 - (void)findViewsIn:(UIView *)parentView stopOnFirstMatch:(BOOL)stopOnFirstMatch
 {
   for (UIView *childView in [parentView subviews]) {
-    if ([_criteria isSatisfiedByView:childView]) {
+    if ([childView isKindOfClass:_viewType] && [_criteria isSatisfiedByView:childView]) {
       [_foundViews addObject:childView];
       
       if (stopOnFirstMatch) return;

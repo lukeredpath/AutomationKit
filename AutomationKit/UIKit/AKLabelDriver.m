@@ -11,8 +11,6 @@
 #import "AKTaggedViewFinder.h"
 #import "AKRecursiveViewFinder.h"
 #import "AKKeyValueCriteria.h"
-#import "AKTypeOfView.h"
-#import "AKAllOfCriteria.h"
 #import "EXPMatcher.h"
 
 
@@ -48,10 +46,10 @@
 
 + (id)inWindow:(UIWindow *)window withText:(NSString *)text
 {
-  id<AKViewCriteria> criteria = [[AKAllOfCriteria alloc] initWithCriteria:AK_isTypeOfView([UILabel class]), AK_hasValueForKey(text, @"text"), nil];
-  
   id<AKViewSelector> mainWindowSelector = [AKReferencedViewSelector selectorForView:window];
-  id<AKViewSelector> labelViewSelector = [[AKRecursiveViewFinder alloc] initWithCriteria:criteria parentViewSelector:mainWindowSelector];
+  id<AKViewSelector> labelViewSelector = [[AKRecursiveViewFinder alloc] initWithViewType:[UILabel class] 
+                                                                                criteria:AK_hasValueForKey(text, @"text") 
+                                                                      parentViewSelector:mainWindowSelector];
   
   return [[self alloc] initWithViewSelector:labelViewSelector];
 }

@@ -80,6 +80,21 @@ describe(@"AKRecursiveViewFinder", ^{
     expect(result).willNot.contain(childView);
 	});
   
+  it(@"finds all subviews of a specific type matching criteria", ^{
+    AKRecursiveViewFinder *finder = [[AKRecursiveViewFinder alloc] initWithViewType:[UILabel class] criteria:AK_anyView() parentViewSelector:parentViewSelector];
+    
+    UILabel *childViewOne = [[UILabel alloc] init];
+    [parentView addSubview:childViewOne];
+    
+    UIView *childViewTwo = [[UIView alloc] init];
+    [parentView addSubview:childViewTwo];
+    
+    NSArray *result = [finder views];
+    
+    expect(result).to.contain(childViewOne);
+    expect(result).toNot.contain(childViewTwo);
+
+	});
 });
 
 SpecEnd
