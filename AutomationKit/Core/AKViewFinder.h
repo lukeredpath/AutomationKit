@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AKProbe.h"
 
-@protocol AKViewFinder <NSObject>
+@protocol AKViewFinder <AKProbe>
 
 - (NSArray *)views;
 

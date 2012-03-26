@@ -9,9 +9,10 @@
 #import "AKViewFinder.h"
 #import "AKViewSelector.h"
 #import "AKViewCriteria.h"
+#import "AKProbe.h"
 
 
-@interface AKRecursiveViewFinder : NSObject <AKViewFinder, AKViewSelector>
+@interface AKRecursiveViewFinder : NSObject <AKViewFinder>
 
 - (id)initWithViewType:(Class)type
               criteria:(id<AKViewCriteria>)criteria 
@@ -19,5 +20,7 @@
 
 - (id)initWithCriteria:(id<AKViewCriteria>)criteria 
     parentViewSelector:(id<AKViewSelector>)parentViewSelector;
+
+- (id<AKViewSelector>)limitedToSingleView;
 
 @end

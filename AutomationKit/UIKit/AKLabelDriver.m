@@ -47,9 +47,9 @@
 + (id)inWindow:(UIWindow *)window withText:(NSString *)text
 {
   id<AKViewSelector> mainWindowSelector = [AKReferencedViewSelector selectorForView:window];
-  id<AKViewSelector> labelViewSelector = [[AKRecursiveViewFinder alloc] initWithViewType:[UILabel class] 
+  id<AKViewSelector> labelViewSelector = [[[AKRecursiveViewFinder alloc] initWithViewType:[UILabel class] 
                                                                                 criteria:AK_hasValueForKey(text, @"text") 
-                                                                      parentViewSelector:mainWindowSelector];
+                                                                      parentViewSelector:mainWindowSelector] limitedToSingleView];
   
   return [[self alloc] initWithViewSelector:labelViewSelector];
 }

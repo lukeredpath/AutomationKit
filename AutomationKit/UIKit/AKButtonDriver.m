@@ -54,9 +54,9 @@
 + (id)inWindow:(UIWindow *)window withTitle:(NSString *)title
 {
   id<AKViewSelector> mainWindowSelector = [AKReferencedViewSelector selectorForView:window];
-  id<AKViewSelector> buttonViewSelector = [[AKRecursiveViewFinder alloc] initWithViewType:[UILabel class] 
+  id<AKViewSelector> buttonViewSelector = [[[AKRecursiveViewFinder alloc] initWithViewType:[UILabel class] 
                                                                                  criteria:AK_hasValueForKey(title, @"currentTitle")
-                                                                       parentViewSelector:mainWindowSelector];
+                                                                       parentViewSelector:mainWindowSelector] limitedToSingleView];
   
   return [[self alloc] initWithViewSelector:buttonViewSelector automaton:[self defaultAutomaton]];
 }

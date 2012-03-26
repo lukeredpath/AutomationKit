@@ -25,9 +25,23 @@
   return self;
 }
 
+#pragma mark - AKViewSelector
+
 - (UIView *)view
 {
   return _view;
+}
+
+#pragma mark - AKProbe
+
+- (void)probe
+{
+  // nothing to probe
+}
+
+- (BOOL)isSatisfied
+{
+  return YES;
 }
 
 @end

@@ -11,6 +11,7 @@
 @implementation AKTaggedViewFinder {
   NSInteger _tag;
   id<AKViewSelector> _parentViewSelector;
+  UIView *_theView;
 }
 
 - (id)initWithTag:(NSInteger)tag parentViewSelector:(id<AKViewSelector>)parentViewSelector
@@ -22,9 +23,24 @@
   return self;
 }
 
+#pragma mark - AKViewSelector
+
 - (UIView *)view
 {
-  return [[_parentViewSelector view] viewWithTag:_tag];
+  [self probe];
+  return _theView;
+}
+
+#pragma mark - AKProbe
+
+- (void)probe
+{
+  _theView = [[_parentViewSelector view] viewWithTag:_tag];
+}
+
+- (BOOL)isSatisfied
+{
+  return (_theView != nil);
 }
 
 @end

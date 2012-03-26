@@ -47,6 +47,9 @@
 		A305754E1520049800DA19BD /* AKAllOfCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = A305754C1520049800DA19BD /* AKAllOfCriteria.m */; };
 		A305757C1520D51200DA19BD /* AKViewMatcher+beVisible.h in Headers */ = {isa = PBXBuildFile; fileRef = A305757A1520D51200DA19BD /* AKViewMatcher+beVisible.h */; };
 		A305757D1520D51200DA19BD /* AKViewMatcher+beVisible.m in Sources */ = {isa = PBXBuildFile; fileRef = A305757B1520D51200DA19BD /* AKViewMatcher+beVisible.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A30575871520E07E00DA19BD /* AKProbe.h in Headers */ = {isa = PBXBuildFile; fileRef = A30575861520E07E00DA19BD /* AKProbe.h */; };
+		A305758A1520E35D00DA19BD /* AKSingleViewFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = A30575881520E35D00DA19BD /* AKSingleViewFinder.h */; };
+		A305758B1520E35D00DA19BD /* AKSingleViewFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575891520E35D00DA19BD /* AKSingleViewFinder.m */; };
 		A3849DF2151FCBA0009289A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
 		A3849DF4151FCBA0009289A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF3151FCBA0009289A5 /* Foundation.framework */; };
 		A3849DF6151FCBA0009289A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */; };
@@ -118,6 +121,9 @@
 		A305754C1520049800DA19BD /* AKAllOfCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAllOfCriteria.m; sourceTree = "<group>"; };
 		A305757A1520D51200DA19BD /* AKViewMatcher+beVisible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKViewMatcher+beVisible.h"; sourceTree = "<group>"; };
 		A305757B1520D51200DA19BD /* AKViewMatcher+beVisible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AKViewMatcher+beVisible.m"; sourceTree = "<group>"; };
+		A30575861520E07E00DA19BD /* AKProbe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKProbe.h; sourceTree = "<group>"; };
+		A30575881520E35D00DA19BD /* AKSingleViewFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSingleViewFinder.h; sourceTree = "<group>"; };
+		A30575891520E35D00DA19BD /* AKSingleViewFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSingleViewFinder.m; sourceTree = "<group>"; };
 		A3849DED151FCBA0009289A5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3849DF1151FCBA0009289A5 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A3849DF3151FCBA0009289A5 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -214,6 +220,7 @@
 				A30574CD151FE15F00DA19BD /* AKAutomaton.h */,
 				A30574CF151FE1E200DA19BD /* AKNativeAutomaton.h */,
 				A30574D0151FE1E200DA19BD /* AKNativeAutomaton.m */,
+				A30575861520E07E00DA19BD /* AKProbe.h */,
 				A3057527151FFB0500DA19BD /* AKViewCriteria.h */,
 				A305750B151FF38A00DA19BD /* AKViewSelector.h */,
 				A3057535151FFC2100DA19BD /* AKViewFinder.h */,
@@ -259,6 +266,8 @@
 				A3057512151FF55700DA19BD /* AKTaggedViewFinder.m */,
 				A3057522151FFA9200DA19BD /* AKRecursiveViewFinder.h */,
 				A3057523151FFA9200DA19BD /* AKRecursiveViewFinder.m */,
+				A30575881520E35D00DA19BD /* AKSingleViewFinder.h */,
+				A30575891520E35D00DA19BD /* AKSingleViewFinder.m */,
 				A305750D151FF4B600DA19BD /* AKMainWindowFinder.h */,
 				A305750E151FF4B600DA19BD /* AKMainWindowFinder.m */,
 			);
@@ -417,6 +426,8 @@
 				A305753E151FFFCF00DA19BD /* AKKeyValueCriteria.h in Headers */,
 				A305754D1520049800DA19BD /* AKAllOfCriteria.h in Headers */,
 				A305757C1520D51200DA19BD /* AKViewMatcher+beVisible.h in Headers */,
+				A30575871520E07E00DA19BD /* AKProbe.h in Headers */,
+				A305758A1520E35D00DA19BD /* AKSingleViewFinder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +661,7 @@
 				A305753F151FFFCF00DA19BD /* AKKeyValueCriteria.m in Sources */,
 				A305754E1520049800DA19BD /* AKAllOfCriteria.m in Sources */,
 				A305757D1520D51200DA19BD /* AKViewMatcher+beVisible.m in Sources */,
+				A305758B1520E35D00DA19BD /* AKSingleViewFinder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

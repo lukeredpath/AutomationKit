@@ -7,6 +7,8 @@
 //
 
 #import "AKRecursiveViewFinder.h"
+#import "AKSingleViewFinder.h"
+
 
 @implementation AKRecursiveViewFinder {
   Class _viewType;
@@ -34,37 +36,41 @@
   return [self initWithViewType:[UIView class] criteria:criteria parentViewSelector:parentViewSelector];
 }
 
+- (id<AKViewSelector>)limitedToSingleView
+{
+  return [[AKSingleViewFinder alloc] initWithViewFinder:self];
+}
+
+#pragma mark - AKViewFinder methods
+
 - (NSArray *)views
 {
-  [_foundViews removeAllObjects];
-
-  [self findViewsIn:[_parentViewSelector view] stopOnFirstMatch:NO];
-  
+  [self probe];
   return [_foundViews copy];
 }
 
-- (UIView *)view
+#pragma mark - AKProbe
+
+- (void)probe
 {
   [_foundViews removeAllObjects];
-  
-  [self findViewsIn:[_parentViewSelector view] stopOnFirstMatch:YES];
-  
-  if (_foundViews.count == 0) {
-    return nil;
-  }
-  
-  return [_foundViews objectAtIndex:0];
+  [self findViewsIn:[_parentViewSelector view]];
 }
 
-- (void)findViewsIn:(UIView *)parentView stopOnFirstMatch:(BOOL)stopOnFirstMatch
+- (BOOL)isSatisfied
+{
+  return [_parentViewSelector isSatisfied];
+}
+
+#pragma mark - Private
+
+- (void)findViewsIn:(UIView *)parentView
 {
   for (UIView *childView in [parentView subviews]) {
     if ([childView isKindOfClass:_viewType] && [_criteria isSatisfiedByView:childView]) {
       [_foundViews addObject:childView];
-      
-      if (stopOnFirstMatch) return;
     }
-    [self findViewsIn:childView stopOnFirstMatch:stopOnFirstMatch];
+    [self findViewsIn:childView];
   }
 }
 

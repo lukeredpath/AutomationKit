@@ -10,6 +10,7 @@
 
 @implementation AKMainWindowFinder {
   UIApplication *_application;
+  UIWindow *_mainWindow;
 }
 
 + (id)forCurrentApplication
@@ -26,9 +27,24 @@
   return self;
 }
 
+#pragma mark - AKViewSelector
+
 - (UIView *)view
 {
-  return [[_application delegate] window];
+  [self probe];
+  return _mainWindow;
+}
+
+#pragma mark - AKProbe
+
+- (void)probe
+{
+  _mainWindow = [[_application delegate] window];
+}
+
+- (BOOL)isSatisfied
+{
+  return (_mainWindow != nil);
 }
 
 @end
