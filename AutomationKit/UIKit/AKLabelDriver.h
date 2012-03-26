@@ -20,3 +20,14 @@
 + (id)inWindow:(UIWindow *)window withText:(NSString *)text;
 
 @end
+
+#ifdef AK_EXPECTA_SUPPORT
+
+#import "Expecta.h"
+#import "EXPMatcher.h"
+
+EXPMatcherInterface(isVisible, (void));
+
+#define beVisible isVisible
+
+#endif

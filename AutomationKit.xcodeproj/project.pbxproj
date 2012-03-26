@@ -45,8 +45,6 @@
 		A30575421520004B00DA19BD /* AKKeyValueCriteriaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575401520002400DA19BD /* AKKeyValueCriteriaTest.m */; };
 		A305754D1520049800DA19BD /* AKAllOfCriteria.h in Headers */ = {isa = PBXBuildFile; fileRef = A305754B1520049800DA19BD /* AKAllOfCriteria.h */; };
 		A305754E1520049800DA19BD /* AKAllOfCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = A305754C1520049800DA19BD /* AKAllOfCriteria.m */; };
-		A305757C1520D51200DA19BD /* AKViewMatcher+beVisible.h in Headers */ = {isa = PBXBuildFile; fileRef = A305757A1520D51200DA19BD /* AKViewMatcher+beVisible.h */; };
-		A305757D1520D51200DA19BD /* AKViewMatcher+beVisible.m in Sources */ = {isa = PBXBuildFile; fileRef = A305757B1520D51200DA19BD /* AKViewMatcher+beVisible.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A30575871520E07E00DA19BD /* AKProbe.h in Headers */ = {isa = PBXBuildFile; fileRef = A30575861520E07E00DA19BD /* AKProbe.h */; };
 		A305758A1520E35D00DA19BD /* AKSingleViewFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = A30575881520E35D00DA19BD /* AKSingleViewFinder.h */; };
 		A305758B1520E35D00DA19BD /* AKSingleViewFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575891520E35D00DA19BD /* AKSingleViewFinder.m */; };
@@ -128,8 +126,6 @@
 		A30575401520002400DA19BD /* AKKeyValueCriteriaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKKeyValueCriteriaTest.m; sourceTree = "<group>"; };
 		A305754B1520049800DA19BD /* AKAllOfCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAllOfCriteria.h; sourceTree = "<group>"; };
 		A305754C1520049800DA19BD /* AKAllOfCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAllOfCriteria.m; sourceTree = "<group>"; };
-		A305757A1520D51200DA19BD /* AKViewMatcher+beVisible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKViewMatcher+beVisible.h"; sourceTree = "<group>"; };
-		A305757B1520D51200DA19BD /* AKViewMatcher+beVisible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AKViewMatcher+beVisible.m"; sourceTree = "<group>"; };
 		A30575861520E07E00DA19BD /* AKProbe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKProbe.h; sourceTree = "<group>"; };
 		A30575881520E35D00DA19BD /* AKSingleViewFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSingleViewFinder.h; sourceTree = "<group>"; };
 		A30575891520E35D00DA19BD /* AKSingleViewFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSingleViewFinder.m; sourceTree = "<group>"; };
@@ -317,8 +313,6 @@
 		A30575791520D4C800DA19BD /* Matchers */ = {
 			isa = PBXGroup;
 			children = (
-				A305757A1520D51200DA19BD /* AKViewMatcher+beVisible.h */,
-				A305757B1520D51200DA19BD /* AKViewMatcher+beVisible.m */,
 			);
 			name = Matchers;
 			sourceTree = "<group>";
@@ -461,7 +455,6 @@
 				A305753A151FFED500DA19BD /* AKAnyView.h in Headers */,
 				A305753E151FFFCF00DA19BD /* AKKeyValueCriteria.h in Headers */,
 				A305754D1520049800DA19BD /* AKAllOfCriteria.h in Headers */,
-				A305757C1520D51200DA19BD /* AKViewMatcher+beVisible.h in Headers */,
 				A30575871520E07E00DA19BD /* AKProbe.h in Headers */,
 				A305758A1520E35D00DA19BD /* AKSingleViewFinder.h in Headers */,
 				A305758F1520E53100DA19BD /* AKPollingProber.h in Headers */,
@@ -700,7 +693,6 @@
 				A305753B151FFED500DA19BD /* AKAnyView.m in Sources */,
 				A305753F151FFFCF00DA19BD /* AKKeyValueCriteria.m in Sources */,
 				A305754E1520049800DA19BD /* AKAllOfCriteria.m in Sources */,
-				A305757D1520D51200DA19BD /* AKViewMatcher+beVisible.m in Sources */,
 				A305758B1520E35D00DA19BD /* AKSingleViewFinder.m in Sources */,
 				A30575901520E53100DA19BD /* AKPollingProber.m in Sources */,
 				A305759A1520EBD200DA19BD /* AKViewAssertionProbe.m in Sources */,

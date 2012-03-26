@@ -10,7 +10,6 @@
 #import "LRAppDelegate.h"
 #import "AKButtonDriver.h"
 #import "AKLabelDriver.h"
-#import "AKViewMatcher+beVisible.h"
 
 LRAppDelegate *getAppDelegate() {
   return [[UIApplication sharedApplication] delegate];
