@@ -23,6 +23,13 @@
 		A30574D2151FE1E200DA19BD /* AKNativeAutomaton.m in Sources */ = {isa = PBXBuildFile; fileRef = A30574D0151FE1E200DA19BD /* AKNativeAutomaton.m */; };
 		A30574D5151FE54900DA19BD /* AKViewLocator.h in Headers */ = {isa = PBXBuildFile; fileRef = A30574D3151FE54900DA19BD /* AKViewLocator.h */; };
 		A30574D6151FE54900DA19BD /* AKViewLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = A30574D4151FE54900DA19BD /* AKViewLocator.m */; };
+		A30574F6151FE75C00DA19BD /* libPods-tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849E39151FCCCF009289A5 /* libPods-tests.a */; };
+		A30574F7151FE75C00DA19BD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849E1A151FCBCF009289A5 /* SenTestingKit.framework */; };
+		A30574F9151FE75C00DA19BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF3151FCBA0009289A5 /* Foundation.framework */; };
+		A30574FA151FE75C00DA19BD /* libAutomationKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849E0C151FCBCF009289A5 /* libAutomationKit.a */; };
+		A30574FC151FE75C00DA19BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3849E24151FCBCF009289A5 /* InfoPlist.strings */; };
+		A3057509151FE9D200DA19BD /* AKViewLocatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A30574D8151FE72800DA19BD /* AKViewLocatorTest.m */; };
+		A305750A151FE9F800DA19BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */; };
 		A3849DF2151FCBA0009289A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
 		A3849DF4151FCBA0009289A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF3151FCBA0009289A5 /* Foundation.framework */; };
 		A3849DF6151FCBA0009289A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */; };
@@ -39,6 +46,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A30574F2151FE75C00DA19BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3849DE4151FCBA0009289A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3849E0B151FCBCF009289A5;
+			remoteInfo = AutomationKit;
+		};
 		A3849E1E151FCBCF009289A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A3849DE4151FCBA0009289A5 /* Project object */;
@@ -65,6 +79,9 @@
 		A30574D0151FE1E200DA19BD /* AKNativeAutomaton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKNativeAutomaton.m; path = ../UIKit/AKNativeAutomaton.m; sourceTree = "<group>"; };
 		A30574D3151FE54900DA19BD /* AKViewLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKViewLocator.h; sourceTree = "<group>"; };
 		A30574D4151FE54900DA19BD /* AKViewLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKViewLocator.m; sourceTree = "<group>"; };
+		A30574D8151FE72800DA19BD /* AKViewLocatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKViewLocatorTest.m; path = Unit/AKViewLocatorTest.m; sourceTree = "<group>"; };
+		A3057502151FE75C00DA19BD /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3057505151FE7CB00DA19BD /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
 		A3849DED151FCBA0009289A5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3849DF1151FCBA0009289A5 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A3849DF3151FCBA0009289A5 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +104,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A30574F5151FE75C00DA19BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30574F6151FE75C00DA19BD /* libPods-tests.a in Frameworks */,
+				A30574F7151FE75C00DA19BD /* SenTestingKit.framework in Frameworks */,
+				A30574F9151FE75C00DA19BD /* Foundation.framework in Frameworks */,
+				A30574FA151FE75C00DA19BD /* libAutomationKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3849DEA151FCBA0009289A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +143,7 @@
 				A3849E1C151FCBCF009289A5 /* UIKit.framework in Frameworks */,
 				A3849E1D151FCBCF009289A5 /* Foundation.framework in Frameworks */,
 				A3849E20151FCBCF009289A5 /* libAutomationKit.a in Frameworks */,
+				A305750A151FE9F800DA19BD /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +193,21 @@
 			name = Additions;
 			sourceTree = "<group>";
 		};
+		A30574D7151FE6F900DA19BD /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		A3057508151FE9C800DA19BD /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				A30574D8151FE72800DA19BD /* AKViewLocatorTest.m */,
+			);
+			name = Integration;
+			sourceTree = "<group>";
+		};
 		A3849DE2151FCBA0009289A5 = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +226,7 @@
 				A3849DED151FCBA0009289A5 /* Demo.app */,
 				A3849E0C151FCBCF009289A5 /* libAutomationKit.a */,
 				A3849E19151FCBCF009289A5 /* AcceptanceTests.octest */,
+				A3057502151FE75C00DA19BD /* UnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,7 +287,9 @@
 		A3849E21151FCBCF009289A5 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A30574D7151FE6F900DA19BD /* Unit */,
 				A3057493151FCD6400DA19BD /* Acceptance */,
+				A3057508151FE9C800DA19BD /* Integration */,
 				A3849E22151FCBCF009289A5 /* Supporting Files */,
 			);
 			name = Tests;
@@ -252,6 +299,7 @@
 		A3849E22151FCBCF009289A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A3057505151FE7CB00DA19BD /* TestHelper.h */,
 				A3849E23151FCBCF009289A5 /* AutomationKitTests-Info.plist */,
 				A3849E24151FCBCF009289A5 /* InfoPlist.strings */,
 			);
@@ -288,6 +336,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		A30574F0151FE75C00DA19BD /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A30574FF151FE75C00DA19BD /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				A30574F3151FE75C00DA19BD /* Sources */,
+				A30574F5151FE75C00DA19BD /* Frameworks */,
+				A30574FB151FE75C00DA19BD /* Resources */,
+				A30574FD151FE75C00DA19BD /* ShellScript */,
+				A30574FE151FE75C00DA19BD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A30574F1151FE75C00DA19BD /* PBXTargetDependency */,
+			);
+			name = UnitTests;
+			productName = AutomationKitTests;
+			productReference = A3057502151FE75C00DA19BD /* UnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		A3849DEC151FCBA0009289A5 /* Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3849E05151FCBA0009289A5 /* Build configuration list for PBXNativeTarget "Demo" */;
@@ -369,11 +437,20 @@
 				A3849DEC151FCBA0009289A5 /* Demo */,
 				A3849E0B151FCBCF009289A5 /* AutomationKit */,
 				A3849E18151FCBCF009289A5 /* AcceptanceTests */,
+				A30574F0151FE75C00DA19BD /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A30574FB151FE75C00DA19BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30574FC151FE75C00DA19BD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3849DEB151FCBA0009289A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,6 +486,34 @@
 			shellScript = "";
 			showEnvVarsInLog = 0;
 		};
+		A30574FD151FE75C00DA19BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		A30574FE151FE75C00DA19BD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+			showEnvVarsInLog = 0;
+		};
 		A3849E17151FCBCF009289A5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,6 +530,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A30574F3151FE75C00DA19BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3849DE9151FCBA0009289A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -452,12 +564,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3057497151FCDE200DA19BD /* ClickingButtonWhichDisplaysLabel.m in Sources */,
+				A3057509151FE9D200DA19BD /* AKViewLocatorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A30574F1151FE75C00DA19BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3849E0B151FCBCF009289A5 /* AutomationKit */;
+			targetProxy = A30574F2151FE75C00DA19BD /* PBXContainerItemProxy */;
+		};
 		A3849E1F151FCBCF009289A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A3849E0B151FCBCF009289A5 /* AutomationKit */;
@@ -485,6 +603,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A3057500151FE75C00DA19BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3849E3B151FCCE6009289A5 /* Pods-tests.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutomationKit/AutomationKit-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "AutomationKitTests/AutomationKitTests-Info.plist";
+				PRODUCT_NAME = UnitTests;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A3057501151FE75C00DA19BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3849E3B151FCCE6009289A5 /* Pods-tests.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutomationKit/AutomationKit-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "AutomationKitTests/AutomationKitTests-Info.plist";
+				PRODUCT_NAME = UnitTests;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		A3849E03151FCBA0009289A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -629,6 +785,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A30574FF151FE75C00DA19BD /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3057500151FE75C00DA19BD /* Debug */,
+				A3057501151FE75C00DA19BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A3849DE7151FCBA0009289A5 /* Build configuration list for PBXProject "AutomationKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

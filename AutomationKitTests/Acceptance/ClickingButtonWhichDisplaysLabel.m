@@ -6,11 +6,7 @@
 //  Copyright 2012 LJR Software Limited. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "Specta.h"
-#define EXP_SHORTHAND
-#import "Expecta.h"
-
+#import "TestHelper.h"
 #import "LRAppDelegate.h"
 #import "AKButtonDriver.h"
 #import "AKLabelDriver.h"
