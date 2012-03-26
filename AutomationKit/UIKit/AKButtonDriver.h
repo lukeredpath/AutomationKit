@@ -11,9 +11,13 @@
 
 @interface AKButtonDriver : NSObject
 
-- (id)initWithButton:(UIButton *)button automaton:(id<AKAutomaton>)automaton;
-+ (id)inWindow:(UIWindow *)window withTag:(NSInteger)tag;
-
 - (void)tap;
+
+@end
+
+@interface AKButtonDriver (Factories)
+
++ (id)inWindow:(UIWindow *)window withTag:(NSInteger)tag;
++ (id)inWindow:(UIWindow *)window withTitle:(NSString *)title;
 
 @end

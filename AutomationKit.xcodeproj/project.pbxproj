@@ -30,6 +30,12 @@
 		A30574FC151FE75C00DA19BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3849E24151FCBCF009289A5 /* InfoPlist.strings */; };
 		A3057509151FE9D200DA19BD /* AKViewLocatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A30574D8151FE72800DA19BD /* AKViewLocatorTest.m */; };
 		A305750A151FE9F800DA19BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */; };
+		A305750F151FF4B600DA19BD /* AKMainWindowFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = A305750D151FF4B600DA19BD /* AKMainWindowFinder.h */; };
+		A3057510151FF4B600DA19BD /* AKMainWindowFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A305750E151FF4B600DA19BD /* AKMainWindowFinder.m */; };
+		A3057513151FF55700DA19BD /* AKTaggedViewFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = A3057511151FF55700DA19BD /* AKTaggedViewFinder.h */; };
+		A3057514151FF55700DA19BD /* AKTaggedViewFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A3057512151FF55700DA19BD /* AKTaggedViewFinder.m */; };
+		A3057517151FF63700DA19BD /* AKReferencedViewSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = A3057515151FF63700DA19BD /* AKReferencedViewSelector.h */; };
+		A3057518151FF63700DA19BD /* AKReferencedViewSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = A3057516151FF63700DA19BD /* AKReferencedViewSelector.m */; };
 		A3849DF2151FCBA0009289A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
 		A3849DF4151FCBA0009289A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF3151FCBA0009289A5 /* Foundation.framework */; };
 		A3849DF6151FCBA0009289A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */; };
@@ -82,6 +88,13 @@
 		A30574D8151FE72800DA19BD /* AKViewLocatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKViewLocatorTest.m; path = Unit/AKViewLocatorTest.m; sourceTree = "<group>"; };
 		A3057502151FE75C00DA19BD /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3057505151FE7CB00DA19BD /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
+		A305750B151FF38A00DA19BD /* AKViewSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKViewSelector.h; sourceTree = "<group>"; };
+		A305750D151FF4B600DA19BD /* AKMainWindowFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKMainWindowFinder.h; sourceTree = "<group>"; };
+		A305750E151FF4B600DA19BD /* AKMainWindowFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKMainWindowFinder.m; sourceTree = "<group>"; };
+		A3057511151FF55700DA19BD /* AKTaggedViewFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTaggedViewFinder.h; sourceTree = "<group>"; };
+		A3057512151FF55700DA19BD /* AKTaggedViewFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTaggedViewFinder.m; sourceTree = "<group>"; };
+		A3057515151FF63700DA19BD /* AKReferencedViewSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKReferencedViewSelector.h; sourceTree = "<group>"; };
+		A3057516151FF63700DA19BD /* AKReferencedViewSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKReferencedViewSelector.m; sourceTree = "<group>"; };
 		A3849DED151FCBA0009289A5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3849DF1151FCBA0009289A5 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A3849DF3151FCBA0009289A5 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -172,9 +185,11 @@
 		A30574B3151FD62C00DA19BD /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A305750C151FF49F00DA19BD /* Selectors */,
 				A30574CD151FE15F00DA19BD /* AKAutomaton.h */,
 				A30574CF151FE1E200DA19BD /* AKNativeAutomaton.h */,
 				A30574D0151FE1E200DA19BD /* AKNativeAutomaton.m */,
+				A305750B151FF38A00DA19BD /* AKViewSelector.h */,
 				A30574D3151FE54900DA19BD /* AKViewLocator.h */,
 				A30574D4151FE54900DA19BD /* AKViewLocator.m */,
 				A30574B4151FD66B00DA19BD /* Additions */,
@@ -206,6 +221,19 @@
 				A30574D8151FE72800DA19BD /* AKViewLocatorTest.m */,
 			);
 			name = Integration;
+			sourceTree = "<group>";
+		};
+		A305750C151FF49F00DA19BD /* Selectors */ = {
+			isa = PBXGroup;
+			children = (
+				A3057515151FF63700DA19BD /* AKReferencedViewSelector.h */,
+				A3057516151FF63700DA19BD /* AKReferencedViewSelector.m */,
+				A3057511151FF55700DA19BD /* AKTaggedViewFinder.h */,
+				A3057512151FF55700DA19BD /* AKTaggedViewFinder.m */,
+				A305750D151FF4B600DA19BD /* AKMainWindowFinder.h */,
+				A305750E151FF4B600DA19BD /* AKMainWindowFinder.m */,
+			);
+			name = Selectors;
 			sourceTree = "<group>";
 		};
 		A3849DE2151FCBA0009289A5 = {
@@ -330,6 +358,9 @@
 				A30574CE151FE15F00DA19BD /* AKAutomaton.h in Headers */,
 				A30574D1151FE1E200DA19BD /* AKNativeAutomaton.h in Headers */,
 				A30574D5151FE54900DA19BD /* AKViewLocator.h in Headers */,
+				A305750F151FF4B600DA19BD /* AKMainWindowFinder.h in Headers */,
+				A3057513151FF55700DA19BD /* AKTaggedViewFinder.h in Headers */,
+				A3057517151FF63700DA19BD /* AKReferencedViewSelector.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +587,9 @@
 				A30574CC151FD7A600DA19BD /* UIEvent+Synthesis.m in Sources */,
 				A30574D2151FE1E200DA19BD /* AKNativeAutomaton.m in Sources */,
 				A30574D6151FE54900DA19BD /* AKViewLocator.m in Sources */,
+				A3057510151FF4B600DA19BD /* AKMainWindowFinder.m in Sources */,
+				A3057514151FF55700DA19BD /* AKTaggedViewFinder.m in Sources */,
+				A3057518151FF63700DA19BD /* AKReferencedViewSelector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

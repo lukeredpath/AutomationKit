@@ -21,17 +21,27 @@ describe(@"Given a button that displays a label when clicked", ^{
   
   __block AKButtonDriver *theButton;
   __block AKLabelDriver *theLabel;
+  __block UIWindow *window;
   
   beforeEach(^{
-    UIWindow *window = getMainWindow();
-    
-    theButton = [AKButtonDriver inWindow:window withTag:AppDelegateView.CLICK_ME_BUTTON];
-    theLabel = [AKLabelDriver inWindow:window withTag:AppDelegateView.CLICK_ME_LABEL];
+    window = getMainWindow();
   });
   
   specify(@"we can click on the button and assert the label is visible using view tags", ^{    
+    theButton = [AKButtonDriver inWindow:window withTag:AppDelegateView.CLICK_ME_BUTTON];
+    theLabel = [AKLabelDriver inWindow:window withTag:AppDelegateView.CLICK_ME_LABEL];
+    
     [theButton tap];
 
+    expect([theLabel isVisible]).isGoing.toBeTruthy();
+  });
+  
+  specify(@"we can click on the button and assert the label is visible using property queries", ^{
+    theButton = [AKButtonDriver inWindow:window withTitle:@"Click Me"];
+    theLabel = [AKLabelDriver inWindow:window withText:@"You Clicked Me"];
+    
+    [theButton tap];
+    
     expect([theLabel isVisible]).isGoing.toBeTruthy();
   });
   

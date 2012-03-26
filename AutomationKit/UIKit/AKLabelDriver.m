@@ -8,29 +8,43 @@
 
 #import "AKLabelDriver.h"
 #import "AKViewLocator.h"
+#import "AKReferencedViewSelector.h"
+#import "AKTaggedViewFinder.h"
 
 
 @implementation AKLabelDriver {
-  UILabel *_label;
+  id<AKViewSelector> _selector;
 }
 
-- (id)initWithLabel:(UILabel *)label
+- (id)initWithViewSelector:(id<AKViewSelector>)viewSelector
 {
   if ((self = [super init])) {
-    _label = label; 
+    _selector = viewSelector;
   }
   return self;
 }
 
-+ (id)inWindow:(UIWindow *)window withTag:(NSInteger)tag
-{
-  UIView *view = [[AKViewLocator locatorWithRootView:window] locateSubviewWithTag:tag ofType:[UILabel class]];
-  return [[self alloc] initWithLabel:(UILabel *)view];
-}
-
 - (BOOL)isVisible
 {
-  return ![_label isHidden];
+  UILabel *label = (UILabel *)[_selector view];
+  return ![label isHidden];
+}
+
+@end
+
+@implementation AKLabelDriver (Factories)
+
++ (id)inWindow:(UIWindow *)window withTag:(NSInteger)tag
+{
+  id<AKViewSelector> mainWindowSelector = [AKReferencedViewSelector selectorForView:window];
+  id<AKViewSelector> taggedViewSelector = [[AKTaggedViewFinder alloc] initWithTag:tag parentViewSelector:mainWindowSelector];
+  
+  return [[self alloc] initWithViewSelector:taggedViewSelector];
+}
+
++ (id)inWindow:(UIWindow *)window withText:(NSString *)text
+{
+  return nil;
 }
 
 @end

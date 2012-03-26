@@ -10,8 +10,13 @@
 
 @interface AKLabelDriver : NSObject
 
-+ (id)inWindow:(UIWindow *)window withTag:(NSInteger)tag;
-
 - (BOOL)isVisible;
+
+@end
+
+@interface AKLabelDriver (Factories)
+
++ (id)inWindow:(UIWindow *)window withTag:(NSInteger)tag;
++ (id)inWindow:(UIWindow *)window withText:(NSString *)text;
 
 @end

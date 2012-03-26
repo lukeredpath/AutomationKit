@@ -8,11 +8,12 @@
 
 #import "AKButtonDriver.h"
 #import "AKNativeAutomaton.h"
-#import "AKViewLocator.h"
+#import "AKReferencedViewSelector.h"
+#import "AKTaggedViewFinder.h"
 
 
 @implementation AKButtonDriver {
-  UIButton *_button;
+  id<AKViewSelector> _selector;
   id<AKAutomaton> _automaton;
 }
 
@@ -21,16 +22,10 @@
   return [AKNativeAutomaton automaton];
 }
 
-+ (id)inWindow:(UIWindow *)window withTag:(NSInteger)tag
-{
-  UIView *view = [[AKViewLocator locatorWithRootView:window] locateSubviewWithTag:tag ofType:[UIButton class]];
-  return [[self alloc] initWithButton:(UIButton *)view automaton:[self defaultAutomaton]];
-}
-
-- (id)initWithButton:(UIButton *)button automaton:(id<AKAutomaton>)automaton
+- (id)initWithViewSelector:(id<AKViewSelector>)viewSelector automaton:(id<AKAutomaton>)automaton
 {
   if ((self = [super init])) {
-    _button = button;
+    _selector = viewSelector;
     _automaton = automaton;
   }
   return self;
@@ -38,7 +33,25 @@
 
 - (void)tap
 {
-  [_automaton tapView:_button atPoint:_button.center];
+  UIView *view = [_selector view];
+  [_automaton tapView:view atPoint:view.center];
+}
+
+@end
+
+@implementation AKButtonDriver (Factories)
+
++ (id)inWindow:(UIWindow *)window withTag:(NSInteger)tag
+{
+  id<AKViewSelector> mainWindowSelector = [AKReferencedViewSelector selectorForView:window];
+  id<AKViewSelector> taggedViewSelector = [[AKTaggedViewFinder alloc] initWithTag:tag parentViewSelector:mainWindowSelector];
+
+  return [[self alloc] initWithViewSelector:taggedViewSelector automaton:[self defaultAutomaton]];
+}
+
++ (id)inWindow:(UIWindow *)window withTitle:(NSString *)title
+{
+  return nil; 
 }
 
 @end
