@@ -21,4 +21,11 @@
 
 #define AK_EXPECTA_SUPPORT
 
+#import "LRAppDelegate.h"
+
+UIView *getRootView(void);
+UIWindow *getMainWindow(void);
+LRAppDelegate *getAppDelegate(void);
+void loadFixtureNamed(NSString *name);
+
 #endif

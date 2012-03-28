@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A3057497151FCDE200DA19BD /* ClickingButtonWhichDisplaysLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3057495151FCD8700DA19BD /* ClickingButtonWhichDisplaysLabel.m */; };
+		A3057497151FCDE200DA19BD /* BasicTappingAndAssertions.m in Sources */ = {isa = PBXBuildFile; fileRef = A3057495151FCD8700DA19BD /* BasicTappingAndAssertions.m */; };
 		A30574A0151FCED300DA19BD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A305749F151FCED300DA19BD /* MainWindow.xib */; };
 		A30574A1151FCFC000DA19BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
 		A30574AF151FD48F00DA19BD /* AKButtonDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = A30574AB151FD48F00DA19BD /* AKButtonDriver.h */; };
@@ -59,6 +59,9 @@
 		A30575A31520F0C800DA19BD /* AKViewCriteriaWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575A11520F0C800DA19BD /* AKViewCriteriaWithBlock.m */; };
 		A30575B51521256B00DA19BD /* AKButtonWithLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30575B21521256800DA19BD /* AKButtonWithLabel.xib */; };
 		A30575B61521257000DA19BD /* AKButtonWithLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575B11521256800DA19BD /* AKButtonWithLabel.m */; };
+		A311308B1523A57000CF7E62 /* AKNavigationControllerRoot.xib in Resources */ = {isa = PBXBuildFile; fileRef = A311308A1523A57000CF7E62 /* AKNavigationControllerRoot.xib */; };
+		A3752D711523997C0016474A /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A3752D701523997C0016474A /* TestHelper.m */; };
+		A3752D721523997C0016474A /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A3752D701523997C0016474A /* TestHelper.m */; };
 		A3849DF2151FCBA0009289A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF1151FCBA0009289A5 /* UIKit.framework */; };
 		A3849DF4151FCBA0009289A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF3151FCBA0009289A5 /* Foundation.framework */; };
 		A3849DF6151FCBA0009289A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849DF5151FCBA0009289A5 /* CoreGraphics.framework */; };
@@ -72,6 +75,16 @@
 		A3849E20151FCBCF009289A5 /* libAutomationKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849E0C151FCBCF009289A5 /* libAutomationKit.a */; };
 		A3849E26151FCBCF009289A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3849E24151FCBCF009289A5 /* InfoPlist.strings */; };
 		A3849E3A151FCCCF009289A5 /* libPods-tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3849E39151FCCCF009289A5 /* libPods-tests.a */; };
+		A3BFF78D15239E70008FF61C /* NavigatingBetweenScreens.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BFF78C15239E70008FF61C /* NavigatingBetweenScreens.m */; };
+		A3BFF7911523A0E5008FF61C /* AKApplicationDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = A3BFF78F1523A0E5008FF61C /* AKApplicationDriver.h */; };
+		A3BFF7921523A0E5008FF61C /* AKApplicationDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BFF7901523A0E5008FF61C /* AKApplicationDriver.m */; };
+		A3BFF7951523A125008FF61C /* AKNavigationBarDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = A3BFF7931523A125008FF61C /* AKNavigationBarDriver.h */; };
+		A3BFF7961523A125008FF61C /* AKNavigationBarDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BFF7941523A125008FF61C /* AKNavigationBarDriver.m */; };
+		A3BFF7991523A1CF008FF61C /* AKWindowDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = A3BFF7971523A1CF008FF61C /* AKWindowDriver.h */; };
+		A3BFF79A1523A1CF008FF61C /* AKWindowDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BFF7981523A1CF008FF61C /* AKWindowDriver.m */; };
+		A3BFF79D1523A28B008FF61C /* AKViewCollectionQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = A3BFF79B1523A28B008FF61C /* AKViewCollectionQuery.h */; };
+		A3BFF79E1523A28B008FF61C /* AKViewCollectionQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BFF79C1523A28B008FF61C /* AKViewCollectionQuery.m */; };
+		A3BFF7A21523A374008FF61C /* AKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BFF7A01523A374008FF61C /* AKNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +106,7 @@
 
 /* Begin PBXFileReference section */
 		0956E8567CD24176A7C11589 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		A3057495151FCD8700DA19BD /* ClickingButtonWhichDisplaysLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClickingButtonWhichDisplaysLabel.m; path = Acceptance/ClickingButtonWhichDisplaysLabel.m; sourceTree = "<group>"; };
+		A3057495151FCD8700DA19BD /* BasicTappingAndAssertions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicTappingAndAssertions.m; path = Acceptance/BasicTappingAndAssertions.m; sourceTree = "<group>"; };
 		A305749F151FCED300DA19BD /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		A30574AB151FD48F00DA19BD /* AKButtonDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKButtonDriver.h; sourceTree = "<group>"; };
 		A30574AC151FD48F00DA19BD /* AKButtonDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKButtonDriver.m; sourceTree = "<group>"; };
@@ -144,6 +157,8 @@
 		A30575B11521256800DA19BD /* AKButtonWithLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKButtonWithLabel.m; sourceTree = "<group>"; };
 		A30575B21521256800DA19BD /* AKButtonWithLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKButtonWithLabel.xib; sourceTree = "<group>"; };
 		A30575B71521272700DA19BD /* AKDemoProjectTestFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AKDemoProjectTestFixture.h; path = Demo/AKDemoProjectTestFixture.h; sourceTree = "<group>"; };
+		A311308A1523A57000CF7E62 /* AKNavigationControllerRoot.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKNavigationControllerRoot.xib; sourceTree = "<group>"; };
+		A3752D701523997C0016474A /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
 		A3849DED151FCBA0009289A5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3849DF1151FCBA0009289A5 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A3849DF3151FCBA0009289A5 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -162,6 +177,17 @@
 		A3849E25151FCBCF009289A5 /* en */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A3849E39151FCCCF009289A5 /* libPods-tests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-tests.a"; path = "Pods/build/Release-iphoneos/libPods-tests.a"; sourceTree = "<group>"; };
 		A3849E3B151FCCE6009289A5 /* Pods-tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-tests.xcconfig"; path = "Pods/Pods-tests.xcconfig"; sourceTree = "<group>"; };
+		A3BFF78C15239E70008FF61C /* NavigatingBetweenScreens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigatingBetweenScreens.m; path = Acceptance/NavigatingBetweenScreens.m; sourceTree = "<group>"; };
+		A3BFF78F1523A0E5008FF61C /* AKApplicationDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKApplicationDriver.h; sourceTree = "<group>"; };
+		A3BFF7901523A0E5008FF61C /* AKApplicationDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKApplicationDriver.m; sourceTree = "<group>"; };
+		A3BFF7931523A125008FF61C /* AKNavigationBarDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNavigationBarDriver.h; sourceTree = "<group>"; };
+		A3BFF7941523A125008FF61C /* AKNavigationBarDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNavigationBarDriver.m; sourceTree = "<group>"; };
+		A3BFF7971523A1CF008FF61C /* AKWindowDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKWindowDriver.h; sourceTree = "<group>"; };
+		A3BFF7981523A1CF008FF61C /* AKWindowDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKWindowDriver.m; sourceTree = "<group>"; };
+		A3BFF79B1523A28B008FF61C /* AKViewCollectionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKViewCollectionQuery.h; sourceTree = "<group>"; };
+		A3BFF79C1523A28B008FF61C /* AKViewCollectionQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKViewCollectionQuery.m; sourceTree = "<group>"; };
+		A3BFF79F1523A374008FF61C /* AKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNavigationController.h; sourceTree = "<group>"; };
+		A3BFF7A01523A374008FF61C /* AKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNavigationController.m; sourceTree = "<group>"; };
 		D031B2375C2E437686797431 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -216,7 +242,8 @@
 		A3057493151FCD6400DA19BD /* Acceptance */ = {
 			isa = PBXGroup;
 			children = (
-				A3057495151FCD8700DA19BD /* ClickingButtonWhichDisplaysLabel.m */,
+				A3BFF78C15239E70008FF61C /* NavigatingBetweenScreens.m */,
+				A3057495151FCD8700DA19BD /* BasicTappingAndAssertions.m */,
 			);
 			name = Acceptance;
 			sourceTree = "<group>";
@@ -224,10 +251,16 @@
 		A30574A2151FD44A00DA19BD /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A3BFF78F1523A0E5008FF61C /* AKApplicationDriver.h */,
+				A3BFF7901523A0E5008FF61C /* AKApplicationDriver.m */,
 				A30574AB151FD48F00DA19BD /* AKButtonDriver.h */,
 				A30574AC151FD48F00DA19BD /* AKButtonDriver.m */,
 				A30574AD151FD48F00DA19BD /* AKLabelDriver.h */,
 				A30574AE151FD48F00DA19BD /* AKLabelDriver.m */,
+				A3BFF7931523A125008FF61C /* AKNavigationBarDriver.h */,
+				A3BFF7941523A125008FF61C /* AKNavigationBarDriver.m */,
+				A3BFF7971523A1CF008FF61C /* AKWindowDriver.h */,
+				A3BFF7981523A1CF008FF61C /* AKWindowDriver.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -246,6 +279,8 @@
 				A305758E1520E53100DA19BD /* AKPollingProber.m */,
 				A30575861520E07E00DA19BD /* AKProbe.h */,
 				A305758C1520E50E00DA19BD /* AKProber.h */,
+				A3BFF79B1523A28B008FF61C /* AKViewCollectionQuery.h */,
+				A3BFF79C1523A28B008FF61C /* AKViewCollectionQuery.m */,
 				A3057527151FFB0500DA19BD /* AKViewCriteria.h */,
 				A305750B151FF38A00DA19BD /* AKViewSelector.h */,
 				A3057535151FFC2100DA19BD /* AKViewFinder.h */,
@@ -338,6 +373,9 @@
 				A30575B01521256800DA19BD /* AKButtonWithLabel.h */,
 				A30575B11521256800DA19BD /* AKButtonWithLabel.m */,
 				A30575B21521256800DA19BD /* AKButtonWithLabel.xib */,
+				A3BFF79F1523A374008FF61C /* AKNavigationController.h */,
+				A3BFF7A01523A374008FF61C /* AKNavigationController.m */,
+				A311308A1523A57000CF7E62 /* AKNavigationControllerRoot.xib */,
 			);
 			name = Fixtures;
 			path = ../AutomationKitTests/DemoFixtures;
@@ -437,6 +475,7 @@
 			isa = PBXGroup;
 			children = (
 				A3057505151FE7CB00DA19BD /* TestHelper.h */,
+				A3752D701523997C0016474A /* TestHelper.m */,
 				A3849E23151FCBCF009289A5 /* AutomationKitTests-Info.plist */,
 				A3849E24151FCBCF009289A5 /* InfoPlist.strings */,
 			);
@@ -479,6 +518,10 @@
 				A305758F1520E53100DA19BD /* AKPollingProber.h in Headers */,
 				A30575991520EBD200DA19BD /* AKViewAssertionProbe.h in Headers */,
 				A30575A21520F0C800DA19BD /* AKViewCriteriaWithBlock.h in Headers */,
+				A3BFF7911523A0E5008FF61C /* AKApplicationDriver.h in Headers */,
+				A3BFF7951523A125008FF61C /* AKNavigationBarDriver.h in Headers */,
+				A3BFF7991523A1CF008FF61C /* AKWindowDriver.h in Headers */,
+				A3BFF79D1523A28B008FF61C /* AKViewCollectionQuery.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +650,7 @@
 				A3849DFC151FCBA0009289A5 /* InfoPlist.strings in Resources */,
 				A30574A0151FCED300DA19BD /* MainWindow.xib in Resources */,
 				A30575B51521256B00DA19BD /* AKButtonWithLabel.xib in Resources */,
+				A311308B1523A57000CF7E62 /* AKNavigationControllerRoot.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,6 +729,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A305759E1520ED4C00DA19BD /* AKViewAssertionProbeTest.m in Sources */,
+				A3752D721523997C0016474A /* TestHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +740,7 @@
 				A3849DFE151FCBA0009289A5 /* main.m in Sources */,
 				A3849E02151FCBA0009289A5 /* LRAppDelegate.m in Sources */,
 				A30575B61521257000DA19BD /* AKButtonWithLabel.m in Sources */,
+				A3BFF7A21523A374008FF61C /* AKNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,6 +764,10 @@
 				A30575901520E53100DA19BD /* AKPollingProber.m in Sources */,
 				A305759A1520EBD200DA19BD /* AKViewAssertionProbe.m in Sources */,
 				A30575A31520F0C800DA19BD /* AKViewCriteriaWithBlock.m in Sources */,
+				A3BFF7921523A0E5008FF61C /* AKApplicationDriver.m in Sources */,
+				A3BFF7961523A125008FF61C /* AKNavigationBarDriver.m in Sources */,
+				A3BFF79A1523A1CF008FF61C /* AKWindowDriver.m in Sources */,
+				A3BFF79E1523A28B008FF61C /* AKViewCollectionQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,11 +775,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3057497151FCDE200DA19BD /* ClickingButtonWhichDisplaysLabel.m in Sources */,
+				A3057497151FCDE200DA19BD /* BasicTappingAndAssertions.m in Sources */,
 				A305752B151FFB5300DA19BD /* AKTaggedViewFinderTest.m in Sources */,
 				A305752D151FFB7300DA19BD /* AKRecursiveViewFinderTest.m in Sources */,
 				A30575421520004B00DA19BD /* AKKeyValueCriteriaTest.m in Sources */,
 				A30575951520E74500DA19BD /* AKPollingProbeTest.m in Sources */,
+				A3752D711523997C0016474A /* TestHelper.m in Sources */,
+				A3BFF78D15239E70008FF61C /* NavigatingBetweenScreens.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

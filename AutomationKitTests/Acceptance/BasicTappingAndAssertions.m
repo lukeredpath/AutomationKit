@@ -8,24 +8,10 @@
 
 #import "TestHelper.h"
 #import "AKButtonWithLabel.h"
-#import "LRAppDelegate.h"
 #import "AKButtonDriver.h"
 #import "AKLabelDriver.h"
 
-LRAppDelegate *getAppDelegate() {
-  return [[UIApplication sharedApplication] delegate];
-}
-
-UIWindow *getMainWindow() {
-  return [getAppDelegate() window];
-}
-
-UIView *getRootView()
-{
-  return [getMainWindow().rootViewController view];
-}
-
-SpecBegin(ClickingButtonWhichDisplaysLabel)
+SpecBegin(BasicTappingAndAssertions)
 
 describe(@"Given a button that displays a label when clicked", ^{
   
@@ -33,7 +19,7 @@ describe(@"Given a button that displays a label when clicked", ^{
   __block AKLabelDriver *theLabel;
   
   beforeEach(^{
-    [getAppDelegate() loadFixtureNamed:@"AKButtonWithLabel"];
+    loadFixtureNamed(@"AKButtonWithLabel");
   });
   
   specify(@"we can click on the button and assert the label is visible using view tags", ^{
