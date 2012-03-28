@@ -28,6 +28,7 @@ describe(@"Given an UINavigationController on the screen", ^{
     expect(navBar.currentTitle).to.equal(@"Root View");
     
     AKButtonDriver *button = [[application.mainWindow buttons] firstWithValue:@"Next" forKey:@"currentTitle"];
+    
     [button tap];
     
     expect(navBar.currentTitle).to.equal(@"Next View");

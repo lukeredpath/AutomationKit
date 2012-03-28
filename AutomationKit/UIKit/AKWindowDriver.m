@@ -10,6 +10,8 @@
 #import "AKMainWindowFinder.h"
 #import "AKRecursiveViewFinder.h"
 #import "AKViewCollectionQuery.h"
+#import "AKButtonDriver.h"
+
 
 @implementation AKWindowDriver
 
@@ -28,7 +30,9 @@
 
 - (AKViewCollectionQuery *)buttons
 {
-  return [[AKViewCollectionQuery alloc] init];
+  return [[AKViewCollectionQuery alloc] initWithViewType:[UIButton class] 
+                                      parentViewSelector:_selector 
+                                             driverClass:[AKButtonDriver class]];
 }
 
 @end

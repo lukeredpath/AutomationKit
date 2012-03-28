@@ -6,10 +6,14 @@
 //  Copyright (c) 2012 LJR Software Limited. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "AKViewDriver.h"
 
 @interface AKViewCollectionQuery : NSObject
 
-- (id)firstWithValue:(NSString *)value forKey:(NSString *)key;
+- (id)initWithViewType:(Class)type 
+    parentViewSelector:(id<AKViewSelector>)parentViewSelector 
+           driverClass:(Class<AKViewDriver>)driverClass;
+
+- (id<AKViewDriver>)firstWithValue:(NSString *)value forKey:(NSString *)key;
 
 @end

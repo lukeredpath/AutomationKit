@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "AKViewCriteria.h"
 #import "AKViewCriteriaWithBlock.h"
+#import "AKViewSelector.h"
 
 @protocol AKViewDriver <NSObject>
 
+- (id)initWithViewSelector:(id<AKViewSelector>)viewSelector;
 - (void)perform:(void (^)(UIView *))block;
 - (id)inspect:(id (^)(UIView *))block;
 - (BOOL)assertView:(AKViewCriteriaWithBlockBlock)block onFailure:(NSString *)failureDescription;
