@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AKAutomaton.h"
+#import "AKAbstractViewDriver.h"
 
-@interface AKButtonDriver : NSObject
+@interface AKButtonDriver : AKAbstractViewDriver
 
 - (void)tap;
 
@@ -17,7 +17,6 @@
 
 @interface AKButtonDriver (Factories)
 
-+ (id)inView:(UIView *)view withTag:(NSInteger)tag;
 + (id)inView:(UIView *)view withTitle:(NSString *)title;
 
 @end

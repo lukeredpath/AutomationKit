@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 LJR Software Limited. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "AKAbstractViewDriver.h"
 
-@interface AKLabelDriver : NSObject
+@interface AKLabelDriver : AKAbstractViewDriver
 
 - (BOOL)isVisible;
 
@@ -16,7 +16,6 @@
 
 @interface AKLabelDriver (Factories)
 
-+ (id)inView:(UIView *)view withTag:(NSInteger)tag;
 + (id)inView:(UIView *)view withText:(NSString *)text;
 
 @end

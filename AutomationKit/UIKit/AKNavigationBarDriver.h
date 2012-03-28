@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 LJR Software Limited. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "AKAbstractViewDriver.h"
 
-@interface AKNavigationBarDriver : NSObject
+@interface AKNavigationBarDriver : AKAbstractViewDriver
 
 @property (nonatomic, readonly) NSString *title;
 

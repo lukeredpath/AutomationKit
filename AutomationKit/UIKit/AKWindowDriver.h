@@ -6,11 +6,11 @@
 //  Copyright (c) 2012 LJR Software Limited. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "AKAbstractViewDriver.h"
 
 @class AKViewCollectionQuery;
 
-@interface AKWindowDriver : NSObject
+@interface AKWindowDriver : AKAbstractViewDriver
 
 - (AKViewCollectionQuery *)buttons;
 

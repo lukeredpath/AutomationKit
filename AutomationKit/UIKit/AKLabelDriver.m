@@ -17,19 +17,7 @@
 #import "AKViewAssertionProbe.h"
 
 
-@implementation AKLabelDriver {
-  id<AKViewSelector> _selector;
-  id<AKProber> _prober;
-}
-
-- (id)initWithViewSelector:(id<AKViewSelector>)viewSelector prober:(id<AKProber>)prober
-{
-  if ((self = [super init])) {
-    _selector = viewSelector;
-    _prober = prober;
-  }
-  return self;
-}
+@implementation AKLabelDriver
 
 - (BOOL)isVisible
 {
@@ -37,30 +25,9 @@
     return (BOOL)(![view isHidden]); } onFailure:@"expected to be visible"];
 }
 
-- (BOOL)assertView:(AKViewCriteriaWithBlockBlock)block onFailure:(NSString *)failureDescription
-{
-  AKViewCriteriaWithBlock *criteria = [AKViewCriteriaWithBlock criteriaWithBlock:block failureDescription:failureDescription];
-  AKViewAssertionProbe *assertionProbe = [[AKViewAssertionProbe alloc] initWithViewSelector:_selector assertion:criteria];
-  [_prober checkProbe:assertionProbe];
-  return [assertionProbe isSatisfied];
-}
-
 @end
 
 @implementation AKLabelDriver (Factories)
-
-+ (id<AKProber>)defaultProber
-{
-  return [[AKPollingProber alloc] init];
-}
-
-+ (id)inView:(UIView *)view withTag:(NSInteger)tag
-{
-  id<AKViewSelector> parentViewSelector = [AKReferencedViewSelector selectorForView:view];
-  id<AKViewSelector> taggedViewSelector = [[AKTaggedViewFinder alloc] initWithTag:tag parentViewSelector:parentViewSelector];
-  
-  return [[self alloc] initWithViewSelector:taggedViewSelector prober:[self defaultProber]];
-}
 
 + (id)inView:(UIView *)view withText:(NSString *)text
 {
@@ -69,8 +36,7 @@
                                                                                 criteria:AK_hasValueForKey(text, @"text") 
                                                                       parentViewSelector:parentViewSelector] limitedToSingleView];
   
-  return [[self alloc] initWithViewSelector:labelViewSelector prober:[self defaultProber]];
+  return [[self alloc] initWithViewSelector:labelViewSelector];
 }
 
 @end
-

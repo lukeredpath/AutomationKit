@@ -18,26 +18,7 @@
 #import "AKViewAssertionProbe.h"
 
 
-@implementation AKButtonDriver {
-  id<AKViewSelector> _selector;
-  id<AKAutomaton> _automaton;
-  id<AKProber> _prober;
-}
-
-+ (id<AKAutomaton>)defaultAutomaton
-{
-  return [AKNativeAutomaton automaton];
-}
-
-- (id)initWithViewSelector:(id<AKViewSelector>)viewSelector automaton:(id<AKAutomaton>)automaton prober:(id<AKProber>)prober
-{
-  if ((self = [super init])) {
-    _selector = viewSelector;
-    _automaton = automaton;
-    _prober = prober;
-  }
-  return self;
-}
+@implementation AKButtonDriver 
 
 - (void)tap
 {
@@ -46,37 +27,10 @@
   }];
 }
 
-- (void)perform:(void (^)(UIView *))block
-{
-  AKViewCriteriaWithBlock *criteria = [AKViewCriteriaWithBlock criteriaWithBlock:^(UIView *view) {
-    return (BOOL)![view isHidden];
-  } failureDescription:@"expected to be visible before it can be interacted with"];
-  
-  AKViewAssertionProbe *assertionProbe = [[AKViewAssertionProbe alloc] initWithViewSelector:_selector assertion:criteria];
-  [_prober checkProbe:assertionProbe];
-  
-  block([_selector view]);
-}
-
 @end
 
 @implementation AKButtonDriver (Factories)
    
-+ (id<AKProber>)defaultProber
-{
-  return [[AKPollingProber alloc] init];
-}
-
-+ (id)inView:(UIView *)view withTag:(NSInteger)tag
-{
-  id<AKViewSelector> parentViewSelector = [AKReferencedViewSelector selectorForView:view];
-  id<AKViewSelector> taggedViewSelector = [[AKTaggedViewFinder alloc] initWithTag:tag parentViewSelector:parentViewSelector];
-  
-  return [[self alloc] initWithViewSelector:taggedViewSelector 
-                                  automaton:[self defaultAutomaton] 
-                                     prober:[self defaultProber]];
-}
-
 + (id)inView:(UIView *)view withTitle:(NSString *)title
 {
   id<AKViewSelector> parentViewSelector = [AKReferencedViewSelector selectorForView:view];
@@ -84,9 +38,7 @@
                                                                                  criteria:AK_hasValueForKey(title, @"currentTitle")
                                                                        parentViewSelector:parentViewSelector] limitedToSingleView];
   
-  return [[self alloc] initWithViewSelector:buttonViewSelector 
-                                  automaton:[self defaultAutomaton] 
-                                     prober:[self defaultProber]];
+  return [[self alloc] initWithViewSelector:buttonViewSelector];
 }
 
 @end
