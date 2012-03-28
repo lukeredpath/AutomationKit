@@ -17,14 +17,22 @@
   return [[self alloc] init];
 }
 
+- (id)init
+{
+  if ((self = [super init])) {
+    
+  }
+  return self;
+}
+
 - (AKWindowDriver *)mainWindow
 {
-  return [[AKWindowDriver alloc] init];
+  return [AKWindowDriver forMainWindow];
 }
 
 - (AKNavigationBarDriver *)navigationBar
 {
-  return [[AKNavigationBarDriver alloc] init];
+  return [[self mainWindow] navigationBar];
 }
 
 @end

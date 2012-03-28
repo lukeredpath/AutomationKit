@@ -26,6 +26,14 @@
 
 - (id)initWithViewSelector:(id<AKViewSelector>)viewSelector;
 
+#pragma mark - Gestures
+
+- (void)tap;
+
+#pragma mark - Asynchronous Behaviour
+
+- (BOOL)assertView:(AKViewCriteriaWithBlockBlock)block onFailure:(NSString *)failureDescription;
+- (void)perform:(void (^)(UIView *))block;
 
 + (id<AKAutomaton>)defaultAutomaton;
 + (id<AKProber>)defaultProber;

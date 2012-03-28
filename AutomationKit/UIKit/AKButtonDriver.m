@@ -20,13 +20,6 @@
 
 @implementation AKButtonDriver 
 
-- (void)tap
-{
-  [self perform:^(UIView *view) {
-    [_automaton tapView:view];
-  }];
-}
-
 @end
 
 @implementation AKButtonDriver (Factories)

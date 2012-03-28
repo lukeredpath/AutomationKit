@@ -46,6 +46,16 @@
                              prober:[[self class] defaultProber]];
 }
 
+#pragma mark - Gestures
+
+- (void)tap
+{
+  [self perform:^(UIView *view) {
+    [_automaton tapView:view];
+  }];
+}
+
+#pragma mark - Asynchronous behaviour
 
 - (BOOL)assertView:(AKViewCriteriaWithBlockBlock)block onFailure:(NSString *)failureDescription
 {
@@ -67,7 +77,15 @@
   block([_selector view]);
 }
 
+- (id)inspect:(id (^)(UIView *))block
+{
+  [_prober checkProbe:_selector];
+  return block([_selector view]);
+}
+
 @end
+
+#pragma mark - Factory methods
 
 @implementation AKAbstractViewDriver (Factories)
 

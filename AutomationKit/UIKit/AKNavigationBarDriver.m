@@ -10,9 +10,12 @@
 
 @implementation AKNavigationBarDriver
 
-- (NSString *)title
+- (NSString *)currentTitle
 {
-  return nil;
+  return [self inspect:^(UIView *view) {
+    UINavigationItem *topItem = [(UINavigationBar *)view topItem];
+    return topItem.title;
+  }];
 }
 
 @end

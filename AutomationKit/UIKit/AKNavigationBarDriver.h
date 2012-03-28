@@ -10,6 +10,6 @@
 
 @interface AKNavigationBarDriver : AKAbstractViewDriver
 
-@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readonly) NSString *currentTitle;
 
 @end

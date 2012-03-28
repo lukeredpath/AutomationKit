@@ -8,6 +8,7 @@
 
 #import "AKRecursiveViewFinder.h"
 #import "AKSingleViewFinder.h"
+#import "AKAnyView.h"
 
 
 @implementation AKRecursiveViewFinder {
@@ -28,6 +29,11 @@
     _foundViews = [[NSMutableArray alloc] init];
   }
   return self;
+}
+
+- (id)initWithViewType:(Class)type parentViewSelector:(id<AKViewSelector>)parentViewSelector
+{
+  return [self initWithViewType:type criteria:AK_anyView() parentViewSelector:parentViewSelector];
 }
 
 - (id)initWithCriteria:(id<AKViewCriteria>)criteria 

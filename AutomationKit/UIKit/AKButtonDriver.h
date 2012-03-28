@@ -11,8 +11,6 @@
 
 @interface AKButtonDriver : AKAbstractViewDriver
 
-- (void)tap;
-
 @end
 
 @interface AKButtonDriver (Factories)

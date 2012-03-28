@@ -7,11 +7,15 @@
 //
 
 #import "AKAbstractViewDriver.h"
+#import "AKNavigationBarDriver.h"
 
 @class AKViewCollectionQuery;
 
 @interface AKWindowDriver : AKAbstractViewDriver
 
++ (id)forMainWindow;
+
+- (AKNavigationBarDriver *)navigationBar;
 - (AKViewCollectionQuery *)buttons;
 
 @end

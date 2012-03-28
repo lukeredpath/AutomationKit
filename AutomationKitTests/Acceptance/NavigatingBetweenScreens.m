@@ -25,12 +25,12 @@ describe(@"Given an UINavigationController on the screen", ^{
     AKApplicationDriver *application = [AKApplicationDriver applicationDriver];
 
     AKNavigationBarDriver *navBar = [application navigationBar];
-    expect(navBar.title).to.equal(@"Root View");
+    expect(navBar.currentTitle).to.equal(@"Root View");
     
     AKButtonDriver *button = [[application.mainWindow buttons] firstWithValue:@"Next" forKey:@"currentTitle"];
     [button tap];
     
-    expect(navBar.title).to.equal(@"Next View");
+    expect(navBar.currentTitle).to.equal(@"Next View");
   });
   
 });

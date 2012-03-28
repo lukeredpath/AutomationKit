@@ -13,6 +13,7 @@
 @protocol AKViewDriver <NSObject>
 
 - (void)perform:(void (^)(UIView *))block;
+- (id)inspect:(id (^)(UIView *))block;
 - (BOOL)assertView:(AKViewCriteriaWithBlockBlock)block onFailure:(NSString *)failureDescription;
 
 @end
