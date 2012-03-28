@@ -17,5 +17,6 @@
 
 - (AKNavigationBarDriver *)navigationBar;
 - (AKViewCollectionQuery *)buttons;
+- (AKViewCollectionQuery *)labels;
 
 @end

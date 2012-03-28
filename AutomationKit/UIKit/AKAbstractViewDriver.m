@@ -46,6 +46,14 @@
                              prober:[[self class] defaultProber]];
 }
 
+#pragma mark - Assertions
+
+- (BOOL)isVisible
+{
+  return [self assertView:^(UIView *view) {
+    return (BOOL)(![view isHidden]); } onFailure:@"expected to be visible"];
+}
+
 #pragma mark - Gestures
 
 - (void)tap
@@ -77,10 +85,10 @@
   block([_selector view]);
 }
 
-- (id)inspect:(id (^)(UIView *))block
+- (id)inspectValueForKey:(NSString *)key
 {
   [_prober checkProbe:_selector];
-  return block([_selector view]);
+  return [[_selector view] valueForKey:key];
 }
 
 @end

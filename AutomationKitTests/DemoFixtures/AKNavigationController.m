@@ -23,7 +23,7 @@
 
 - (void)tearDown
 {
-  
+  [self popViewControllerAnimated:NO];
 }
 
 - (void)viewDidLoad
@@ -37,7 +37,7 @@
 
 - (IBAction)pushNext:(id)sender
 {
-  UIViewController *nextViewController = [[UIViewController alloc] init];
+  UIViewController *nextViewController = [[UIViewController alloc] initWithNibName:@"AKNavigationControllerNext" bundle:nil];
   nextViewController.title = @"Next View";
   [self pushViewController:nextViewController animated:YES];
 }

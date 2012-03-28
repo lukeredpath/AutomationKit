@@ -10,7 +10,7 @@
 
 @interface AKLabelDriver : AKAbstractViewDriver
 
-- (BOOL)isVisible;
+@property (nonatomic, readonly) NSString *text;
 
 @end
 
@@ -20,13 +20,3 @@
 
 @end
 
-#ifdef AK_EXPECTA_SUPPORT
-
-#import "Expecta.h"
-#import "EXPMatcher.h"
-
-EXPMatcherInterface(isVisible, (void));
-
-#define beVisible isVisible
-
-#endif

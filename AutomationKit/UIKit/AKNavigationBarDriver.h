@@ -7,9 +7,12 @@
 //
 
 #import "AKAbstractViewDriver.h"
+#import "AKButtonDriver.h"
 
 @interface AKNavigationBarDriver : AKAbstractViewDriver
 
 @property (nonatomic, readonly) NSString *currentTitle;
+
+- (AKButtonDriver *)backButton;
 
 @end

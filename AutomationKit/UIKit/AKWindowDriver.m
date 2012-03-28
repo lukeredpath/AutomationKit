@@ -11,7 +11,7 @@
 #import "AKRecursiveViewFinder.h"
 #import "AKViewCollectionQuery.h"
 #import "AKButtonDriver.h"
-
+#import "AKLabelDriver.h"
 
 @implementation AKWindowDriver
 
@@ -33,6 +33,13 @@
   return [[AKViewCollectionQuery alloc] initWithViewType:[UIButton class] 
                                       parentViewSelector:_selector 
                                              driverClass:[AKButtonDriver class]];
+}
+
+- (AKViewCollectionQuery *)labels
+{
+  return [[AKViewCollectionQuery alloc] initWithViewType:[UILabel class] 
+                                      parentViewSelector:_selector 
+                                             driverClass:[AKLabelDriver class]];
 }
 
 @end

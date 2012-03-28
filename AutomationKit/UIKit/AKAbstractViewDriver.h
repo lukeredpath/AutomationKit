@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AKViewDriver.h"
+#import "AKViewCriteriaWithBlock.h"
 #import "AKViewSelector.h"
 #import "AKProber.h"
 #import "AKAutomaton.h"
@@ -26,6 +27,10 @@
 
 - (id)initWithViewSelector:(id<AKViewSelector>)viewSelector;
 
+#pragma mark - Assertions
+
+- (BOOL)isVisible;
+
 #pragma mark - Gestures
 
 - (void)tap;
@@ -34,6 +39,8 @@
 
 - (BOOL)assertView:(AKViewCriteriaWithBlockBlock)block onFailure:(NSString *)failureDescription;
 - (void)perform:(void (^)(UIView *))block;
+
+- (id)inspectValueForKey:(NSString *)key; // private
 
 + (id<AKAutomaton>)defaultAutomaton;
 + (id<AKProber>)defaultProber;
@@ -45,3 +52,14 @@
 + (id)inView:(UIView *)view withTag:(NSInteger)tag;
 
 @end
+
+#ifdef AK_EXPECTA_SUPPORT
+
+#import "Expecta.h"
+#import "EXPMatcher.h"
+
+EXPMatcherInterface(isVisible, (void));
+
+#define beVisible isVisible
+
+#endif

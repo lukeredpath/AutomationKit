@@ -59,6 +59,7 @@
 
 - (void)probe
 {
+  [_parentViewSelector probe];
   [_foundViews removeAllObjects];
   [self findViewsIn:[_parentViewSelector view]];
 }

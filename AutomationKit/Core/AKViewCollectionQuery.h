@@ -7,6 +7,7 @@
 //
 
 #import "AKViewDriver.h"
+#import "AKViewSelector.h"
 
 @interface AKViewCollectionQuery : NSObject
 

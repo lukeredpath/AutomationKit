@@ -19,10 +19,9 @@
 
 @implementation AKLabelDriver
 
-- (BOOL)isVisible
+- (NSString *)text
 {
-  return [self assertView:^(UIView *view) {
-    return (BOOL)(![view isHidden]); } onFailure:@"expected to be visible"];
+  return [self inspectValueForKey:@"title"];
 }
 
 @end
