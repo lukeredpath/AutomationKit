@@ -13,4 +13,5 @@
 @property (nonatomic, strong) IBOutlet UINavigationController *navigationController;
 
 - (IBAction)pushNext:(id)sender;
+- (IBAction)dismissModal:(id)sender;
 @end

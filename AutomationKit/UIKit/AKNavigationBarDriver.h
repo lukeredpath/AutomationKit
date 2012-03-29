@@ -12,7 +12,8 @@
 @interface AKNavigationBarDriver : AKAbstractViewDriver
 
 @property (nonatomic, readonly) NSString *currentTitle;
-
-- (AKButtonDriver *)backButton;
+@property (nonatomic, readonly) AKButtonDriver *rightButton;
+@property (nonatomic, readonly) AKButtonDriver *leftButton;
+@property (nonatomic, readonly) AKButtonDriver *backButton;
 
 @end

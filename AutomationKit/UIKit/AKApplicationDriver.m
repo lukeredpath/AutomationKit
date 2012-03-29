@@ -25,6 +25,11 @@
   return self;
 }
 
+- (void)delayFor:(NSTimeInterval)seconds
+{
+  CFRunLoopRunInMode(kCFRunLoopDefaultMode, seconds, false);
+}
+
 - (AKWindowDriver *)mainWindow
 {
   return [AKWindowDriver forMainWindow];

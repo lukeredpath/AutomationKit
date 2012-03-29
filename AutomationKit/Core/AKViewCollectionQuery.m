@@ -29,7 +29,7 @@
   return self;
 }
 
-- (AKViewCollectionQuery *)firstWithValue:(NSString *)value forKey:(NSString *)key
+- (id<AKViewDriver>)firstWithValue:(NSString *)value forKey:(NSString *)key
 {
   id<AKViewCriteria> criteria = [[AKKeyValueCriteria alloc] initWithKey:key value:value];
   id<AKViewSelector> selector = [[[AKRecursiveViewFinder alloc] initWithViewType:_type criteria:criteria parentViewSelector:_parentViewSelector] limitedToSingleView];

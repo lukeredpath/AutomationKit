@@ -42,7 +42,7 @@ describe(@"Given an UINavigationController on the screen", ^{
     AKButtonDriver *button = [[application.mainWindow buttons] firstWithValue:@"Next" forKey:@"currentTitle"];
     
     [button tap];
-    
+
     AKNavigationBarDriver *navBar = [application navigationBar];
 
     [[navBar backButton] tap];
@@ -50,6 +50,34 @@ describe(@"Given an UINavigationController on the screen", ^{
     expect(button).isVisible();
   });
   
+  describe(@"and a second screen that displays a modal view", ^{
+    specify(@"we can tap the button and display the modal", ^{
+      AKButtonDriver *button = [[application.mainWindow buttons] firstWithValue:@"Next" forKey:@"currentTitle"];
+      [button tapAndWait:0.5];
+      
+      AKButtonDriver *rightButton = [[application navigationBar] rightButton];
+      [rightButton tapAndWait:0.5];
+
+      AKLabelDriver *modalLabel = [[application.mainWindow labels] firstWithValue:@"Modal View" forKey:@"text"];
+      [modalLabel isVisible];
+    });
+    
+    specify(@"we can dismis the modal after its displayed using its left nav button", ^{
+      AKButtonDriver *button = [[application.mainWindow buttons] firstWithValue:@"Next" forKey:@"currentTitle"];
+      [button tapAndWait:0.5];
+      
+      AKButtonDriver *rightButton = [[application navigationBar] rightButton];
+      [rightButton tapAndWait:0.5];
+      
+      AKButtonDriver *leftButton = [[application navigationBar] leftButton];
+      [leftButton tap];
+      
+      AKLabelDriver *label = [[application.mainWindow labels] firstWithValue:@"Next" forKey:@"text"];
+      expect(label).isVisible();
+    });
+  });
+  
 });
+
 
 SpecEnd

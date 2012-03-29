@@ -51,7 +51,6 @@
 
 - (NSArray *)views
 {
-  [self probe];
   return [_foundViews copy];
 }
 
@@ -71,7 +70,7 @@
 
 - (NSString *)failureDescription
 {
-  return [NSString stringWithFormat:@"Couldn't find view matching criteria"];
+  return [NSString stringWithFormat:@"%@ %@", NSStringFromClass(_viewType), _criteria];
 }
 
 #pragma mark - Private

@@ -38,7 +38,7 @@ NSString *const AKPollingProberTimedOut = @"AKPollingProberTimedOut";
 - (void)checkProbe:(id<AKProbe>)probe
 {
   if (![self poll:probe]) {
-    @throw [NSException exceptionWithName:AKPollingProberTimedOut reason:[probe failureDescription] userInfo:nil];
+    [NSException raise:AKPollingProberTimedOut format:@"Expected %@", [probe failureDescription]];
   }
 }
 

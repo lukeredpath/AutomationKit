@@ -23,6 +23,7 @@
 
 - (void)tearDown
 {
+  [self dismissModalViewControllerAnimated:NO];
   [self popViewControllerAnimated:NO];
 }
 
@@ -39,7 +40,28 @@
 {
   UIViewController *nextViewController = [[UIViewController alloc] initWithNibName:@"AKNavigationControllerNext" bundle:nil];
   nextViewController.title = @"Next View";
+  
+  UIBarButtonItem *modalButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(displayModal)];
+  
+  nextViewController.navigationItem.rightBarButtonItem = modalButton;
+  
   [self pushViewController:nextViewController animated:YES];
+}
+
+- (void)displayModal
+{
+  UIViewController *modal = [[UIViewController alloc] initWithNibName:@"AKNavigationControllerModal" bundle:nil];  
+  modal.title = @"Modal View";
+  modal.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissModal:)];
+  
+  UINavigationController *modalNav = [[UINavigationController alloc] initWithRootViewController:modal];
+  
+  [self presentModalViewController:modalNav animated:YES];
+}
+
+- (IBAction)dismissModal:(id)sender
+{
+  [self dismissModalViewControllerAnimated:YES];
 }
 
 @end

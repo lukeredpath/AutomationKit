@@ -59,6 +59,9 @@
 		A30575A31520F0C800DA19BD /* AKViewCriteriaWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575A11520F0C800DA19BD /* AKViewCriteriaWithBlock.m */; };
 		A30575B51521256B00DA19BD /* AKButtonWithLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30575B21521256800DA19BD /* AKButtonWithLabel.xib */; };
 		A30575B61521257000DA19BD /* AKButtonWithLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A30575B11521256800DA19BD /* AKButtonWithLabel.m */; };
+		A3094FDA1523F30F008F695B /* AKTargetActionCriteria.h in Headers */ = {isa = PBXBuildFile; fileRef = A3094FD81523F30F008F695B /* AKTargetActionCriteria.h */; };
+		A3094FDB1523F30F008F695B /* AKTargetActionCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = A3094FD91523F30F008F695B /* AKTargetActionCriteria.m */; };
+		A3094FDD1523F738008F695B /* AKNavigationControllerModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3094FDC1523F699008F695B /* AKNavigationControllerModal.xib */; };
 		A311308B1523A57000CF7E62 /* AKNavigationControllerRoot.xib in Resources */ = {isa = PBXBuildFile; fileRef = A311308A1523A57000CF7E62 /* AKNavigationControllerRoot.xib */; };
 		A311308F1523A77400CF7E62 /* AKAbstractViewDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = A311308D1523A77400CF7E62 /* AKAbstractViewDriver.h */; };
 		A31130901523A77400CF7E62 /* AKAbstractViewDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = A311308E1523A77400CF7E62 /* AKAbstractViewDriver.m */; };
@@ -160,6 +163,9 @@
 		A30575B11521256800DA19BD /* AKButtonWithLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKButtonWithLabel.m; sourceTree = "<group>"; };
 		A30575B21521256800DA19BD /* AKButtonWithLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKButtonWithLabel.xib; sourceTree = "<group>"; };
 		A30575B71521272700DA19BD /* AKDemoProjectTestFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AKDemoProjectTestFixture.h; path = Demo/AKDemoProjectTestFixture.h; sourceTree = "<group>"; };
+		A3094FD81523F30F008F695B /* AKTargetActionCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTargetActionCriteria.h; sourceTree = "<group>"; };
+		A3094FD91523F30F008F695B /* AKTargetActionCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTargetActionCriteria.m; sourceTree = "<group>"; };
+		A3094FDC1523F699008F695B /* AKNavigationControllerModal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKNavigationControllerModal.xib; sourceTree = "<group>"; };
 		A311308A1523A57000CF7E62 /* AKNavigationControllerRoot.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKNavigationControllerRoot.xib; sourceTree = "<group>"; };
 		A311308D1523A77400CF7E62 /* AKAbstractViewDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAbstractViewDriver.h; sourceTree = "<group>"; };
 		A311308E1523A77400CF7E62 /* AKAbstractViewDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAbstractViewDriver.m; sourceTree = "<group>"; };
@@ -355,6 +361,8 @@
 				A3057539151FFED500DA19BD /* AKAnyView.m */,
 				A305753C151FFFCF00DA19BD /* AKKeyValueCriteria.h */,
 				A305753D151FFFCF00DA19BD /* AKKeyValueCriteria.m */,
+				A3094FD81523F30F008F695B /* AKTargetActionCriteria.h */,
+				A3094FD91523F30F008F695B /* AKTargetActionCriteria.m */,
 				A30575A01520F0C800DA19BD /* AKViewCriteriaWithBlock.h */,
 				A30575A11520F0C800DA19BD /* AKViewCriteriaWithBlock.m */,
 			);
@@ -387,6 +395,7 @@
 				A3BFF7A01523A374008FF61C /* AKNavigationController.m */,
 				A311308A1523A57000CF7E62 /* AKNavigationControllerRoot.xib */,
 				A31130A31523BF0C00CF7E62 /* AKNavigationControllerNext.xib */,
+				A3094FDC1523F699008F695B /* AKNavigationControllerModal.xib */,
 			);
 			name = Fixtures;
 			path = ../AutomationKitTests/DemoFixtures;
@@ -534,6 +543,7 @@
 				A3BFF7991523A1CF008FF61C /* AKWindowDriver.h in Headers */,
 				A3BFF79D1523A28B008FF61C /* AKViewCollectionQuery.h in Headers */,
 				A311308F1523A77400CF7E62 /* AKAbstractViewDriver.h in Headers */,
+				A3094FDA1523F30F008F695B /* AKTargetActionCriteria.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +674,7 @@
 				A30575B51521256B00DA19BD /* AKButtonWithLabel.xib in Resources */,
 				A311308B1523A57000CF7E62 /* AKNavigationControllerRoot.xib in Resources */,
 				A31130A41523BF9A00CF7E62 /* AKNavigationControllerNext.xib in Resources */,
+				A3094FDD1523F738008F695B /* AKNavigationControllerModal.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,6 +793,7 @@
 				A3BFF79A1523A1CF008FF61C /* AKWindowDriver.m in Sources */,
 				A3BFF79E1523A28B008FF61C /* AKViewCollectionQuery.m in Sources */,
 				A31130901523A77400CF7E62 /* AKAbstractViewDriver.m in Sources */,
+				A3094FDB1523F30F008F695B /* AKTargetActionCriteria.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,7 @@
 @interface AKApplicationDriver : NSObject
 
 + (id)applicationDriver;
+- (void)delayFor:(NSTimeInterval)seconds;
 - (AKWindowDriver *)mainWindow;
 - (AKNavigationBarDriver *)navigationBar;
 

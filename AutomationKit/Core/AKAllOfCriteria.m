@@ -50,4 +50,20 @@
   return @"expected to match all of the given criteria";
 }
 
+- (NSString *)description
+{
+  NSMutableString *description = [NSMutableString string];
+  
+  NSArray *criteriaArray = [_criteria allObjects];
+  
+  for (id<AKViewCriteria> criterion in criteriaArray) {
+    [description appendString:[criterion description]];
+    
+    if (criterion != [criteriaArray lastObject]) {
+      [description appendString:@" and "];
+    }
+  }
+  return [description copy];
+}
+
 @end

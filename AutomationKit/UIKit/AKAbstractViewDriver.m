@@ -63,6 +63,12 @@
   }];
 }
 
+- (void)tapAndWait:(NSTimeInterval)seconds
+{
+  [self tap];
+  CFRunLoopRunInMode(kCFRunLoopDefaultMode, seconds, false);
+}
+
 #pragma mark - Asynchronous behaviour
 
 - (BOOL)assertView:(AKViewCriteriaWithBlockBlock)block onFailure:(NSString *)failureDescription
@@ -80,6 +86,7 @@
   } failureDescription:@"expected to be visible before it can be interacted with"];
   
   AKViewAssertionProbe *assertionProbe = [[AKViewAssertionProbe alloc] initWithViewSelector:_selector assertion:criteria];
+  
   [_prober checkProbe:assertionProbe];
   
   block([_selector view]);

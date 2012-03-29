@@ -37,4 +37,9 @@
   return _failureDescription;
 }
 
+- (NSString *)description
+{
+  return @"satisfying criteria in block";
+}
+
 @end

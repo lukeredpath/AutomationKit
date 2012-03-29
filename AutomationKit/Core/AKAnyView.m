@@ -20,6 +20,11 @@
   return nil; // this can never fail
 }
 
+- (NSString *)description
+{
+  return @"(any instance)";
+}
+
 @end
 
 id<AKViewCriteria> AK_anyView(void)

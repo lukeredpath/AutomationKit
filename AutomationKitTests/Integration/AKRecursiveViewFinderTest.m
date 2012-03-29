@@ -53,6 +53,8 @@ describe(@"AKRecursiveViewFinder", ^{
     UIView *childViewTwo = [[UIView alloc] init];
     [parentView addSubview:childViewTwo];
     
+    [finder probe];
+    
     NSArray *result = [finder views];
     
     expect(result).to.contain(childViewOne);
@@ -68,6 +70,8 @@ describe(@"AKRecursiveViewFinder", ^{
     UIView *subChildView = [[UIView alloc] init];
     [childView addSubview:subChildView];
     
+    [finder probe];
+    
     NSArray *result = [finder views];
     
     expect(result).to.contain(childView);
@@ -79,6 +83,8 @@ describe(@"AKRecursiveViewFinder", ^{
     
     UIView *childView = [[UIView alloc] init];
     [parentView addSubview:childView];
+    
+    [finder probe];
     
     NSArray *result = [finder views];
     
@@ -93,6 +99,8 @@ describe(@"AKRecursiveViewFinder", ^{
     
     UIView *childViewTwo = [[UIView alloc] init];
     [parentView addSubview:childViewTwo];
+    
+    [finder probe];
     
     NSArray *result = [finder views];
     

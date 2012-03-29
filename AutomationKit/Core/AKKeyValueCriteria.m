@@ -41,6 +41,11 @@
   return [NSString stringWithFormat:@"expected to have value %@ for key %@", _value, _key];
 }
 
+- (NSString *)description
+{
+  return [NSString stringWithFormat:@"with {%@: %@}", _key, _value];
+}
+
 @end
 
 id<AKViewCriteria> AK_hasValueForKey(id value, NSString *key)

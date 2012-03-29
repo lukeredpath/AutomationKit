@@ -34,6 +34,7 @@
 #pragma mark - Gestures
 
 - (void)tap;
+- (void)tapAndWait:(NSTimeInterval)seconds;
 
 #pragma mark - Asynchronous Behaviour
 
